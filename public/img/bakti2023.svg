@@ -1,0 +1,66 @@
+<svg width="408" height="242" viewBox="0 0 408 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M288 156C288 150.477 292.477 146 298 146H312V170H288V156Z" fill="#6C2863"/>
+<rect x="312" y="146" width="24" height="24" fill="#6C2863"/>
+<rect x="336" y="170" width="24" height="24" fill="#6C2863"/>
+<rect x="336" y="194" width="24" height="24" fill="#6C2863"/>
+<path d="M336 218H360V232C360 237.523 355.523 242 350 242H336V218Z" fill="#6C2863"/>
+<rect x="312" y="218" width="24" height="24" fill="#6C2863"/>
+<rect x="288" y="218" width="24" height="24" fill="#6C2863"/>
+<rect x="312" y="182" width="24" height="24" fill="#6C2863"/>
+<rect x="240" y="166" width="24" height="24" fill="#6C2863"/>
+<rect x="216" y="142" width="24" height="24" fill="#6C2863"/>
+<rect x="192" y="218" width="24" height="24" fill="#6C2863"/>
+<path d="M192 204C192 198.477 196.477 194 202 194H216V218H192V204Z" fill="#6C2863"/>
+<path d="M192 152C192 146.477 196.477 142 202 142H216V166H192V152Z" fill="#6C2863"/>
+<rect x="216" y="218" width="24" height="24" fill="#6C2863"/>
+<rect x="240" y="218" width="24" height="24" fill="#6C2863"/>
+<rect x="144" y="218" width="24" height="24" fill="#6C2863"/>
+<rect x="96" y="146" width="24" height="24" fill="#6C2863"/>
+<rect x="96" y="170" width="24" height="24" fill="#6C2863"/>
+<path d="M120 146H134C139.523 146 144 150.477 144 156V170H120V146Z" fill="#6C2863"/>
+<rect x="144" y="170" width="24" height="24" fill="#6C2863"/>
+<rect x="144" y="194" width="24" height="24" fill="#6C2863"/>
+<rect x="120" y="218" width="24" height="24" fill="#6C2863"/>
+<path d="M96 194H120V218H106C100.477 218 96 213.523 96 208V194Z" fill="#6C2863"/>
+<rect x="48" y="166" width="24" height="24" fill="#6C2863"/>
+<rect x="24" y="142" width="24" height="24" fill="#6C2863"/>
+<rect y="218" width="24" height="24" fill="#6C2863"/>
+<path d="M0 204C0 198.477 4.47715 194 10 194H24V218H0V204Z" fill="#6C2863"/>
+<path d="M0 152C0 146.477 4.47715 142 10 142H24V166H0V152Z" fill="#6C2863"/>
+<rect x="24" y="218" width="24" height="24" fill="#6C2863"/>
+<rect x="48" y="218" width="24" height="24" fill="#6C2863"/>
+<path d="M384 10C384 4.47715 388.477 0 394 0L408 0V24H384V10Z" fill="#6C2863"/>
+<rect x="384" y="48" width="24" height="24" fill="#6C2863"/>
+<rect x="384" y="48" width="24" height="24" fill="#6C2863"/>
+<rect x="384" y="72" width="24" height="24" fill="#6C2863"/>
+<rect x="288" width="24" height="24" fill="#6C2863"/>
+<rect x="312" width="24" height="24" fill="#6C2863"/>
+<rect x="336" width="24" height="24" fill="#6C2863"/>
+<rect x="312" y="24" width="24" height="24" fill="#6C2863"/>
+<path d="M312 72H336V86C336 91.5228 331.523 96 326 96H312V72Z" fill="#6C2863"/>
+<path d="M192 72H216V96H202C196.477 96 192 91.5228 192 86V72Z" fill="#6C2863"/>
+<rect x="192" y="48" width="24" height="24" fill="#6C2863"/>
+<rect x="192" y="24" width="24" height="24" fill="#6C2863"/>
+<rect x="192" width="24" height="24" fill="#6C2863"/>
+<rect x="228" y="24" width="24" height="24" fill="#6C2863"/>
+<rect x="240" y="72" width="24" height="24" fill="#6C2863"/>
+<rect x="216" y="48" width="24" height="24" fill="#6C2863"/>
+<path d="M240 0L254 0C259.523 0 264 4.47715 264 10V24H240V0Z" fill="#6C2863"/>
+<rect x="120" width="24" height="24" fill="#6C2863"/>
+<rect x="120" y="48" width="24" height="24" fill="#6C2863"/>
+<path d="M144 72H168V86C168 91.5228 163.523 96 158 96H144V72Z" fill="#6C2863"/>
+<rect x="144" y="24" width="24" height="24" fill="#6C2863"/>
+<path d="M96 34C96 28.4772 100.477 24 106 24H120V48H96V34Z" fill="#6C2863"/>
+<rect x="96" y="48" width="24" height="24" fill="#6C2863"/>
+<rect x="96" y="72" width="24" height="24" fill="#6C2863"/>
+<rect x="144" y="48" width="24" height="24" fill="#6C2863"/>
+<path d="M48 72H72V86C72 91.5228 67.5228 96 62 96H48V72Z" fill="#6C2863"/>
+<rect y="48" width="24" height="24" fill="#6C2863"/>
+<rect y="24" width="24" height="24" fill="#6C2863"/>
+<path d="M0 10C0 4.47715 4.47715 0 10 0H24V24H0V10Z" fill="#6C2863"/>
+<rect x="24" width="24" height="24" fill="#6C2863"/>
+<rect x="24" y="72" width="24" height="24" fill="#6C2863"/>
+<rect x="24" y="36" width="24" height="24" fill="#6C2863"/>
+<rect x="48" y="54" width="24" height="24" fill="#6C2863"/>
+<rect x="48" y="18" width="24" height="24" fill="#6C2863"/>
+</svg>
