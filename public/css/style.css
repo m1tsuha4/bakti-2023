@@ -3,8 +3,99 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.8);  */
+    backdrop-filter: blur(5px); /* Efek blur */
+    z-index: 9998; /* Lebih rendah dari pop-up agar pop-up tetap di atas */
+  }
+  
+
+.login-box {
+    width: 25rem;
+    height: 25rem;
+    background: var(--100, #fbebfc);
+    border-radius: 1.5625rem;
+    position: absolute;
+    left: 432px;
+    top: 108px;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.login-box h2 {
+    color: #000;
+    margin-top: 84px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.input-nim {
+    width: 220px;
+    height: 40px;
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 89px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+}
+
+.input-password {
+    width: 220px;
+    height: 40px;
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 89px;
+    border: none;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+    outline: none;
+}
+
+.login-box input[type="text"]::placeholder,
+.login-box input[type="password"]::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.login-box button {
+    border: none;
+    width: 220px;
+    height: 40px;
+    background: var(--30, #6c2863);
+    display: block;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 89px;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
 .nav-link {
-    color: #6C2863;
+    color: #6c2863;
     font-weight: 400;
 }
 
@@ -15,10 +106,9 @@ body {
 }
 
 .nav-link.active {
-    color: #6C2863;
+    color: #6c2863;
     font-weight: 600;
 }
-
 
 .btn-nav {
     margin-top: 3px;
@@ -31,51 +121,41 @@ body {
     align-items: center;
     padding: 8px 20px;
     gap: 10px;
-    
 }
 
-.btn-events{
+.btn-events {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-  }
-
+}
 
 .btn-first {
     border-radius: 10px;
-    background-color: #6C2863;
+    background-color: #6c2863;
     color: #fff;
     margin-right: 8px;
     font-weight: 600;
-      
 }
 .btn-first:hover {
-    background-color:rgba(108, 40, 99, 1);
+    background-color: rgba(108, 40, 99, 1);
     color: #fff;
 }
 
 .btn-second {
     border-radius: 10px;
-    border: 1px solid #6C2863;
+    border: 1px solid #6c2863;
     background-color: #fff;
-    color: #6C2863;
+    color: #6c2863;
     margin-right: 8px;
     margin-top: 10px;
     font-weight: 600;
-    
 }
-
-
 
 .btn-second:hover {
     border: 1px solid #000;
-    background-color:#fff;
-    color: #6C2863;
+    background-color: #fff;
+    color: #6c2863;
 }
-
-
-
 
 #hero img {
     width: fit-content;
@@ -87,7 +167,6 @@ body {
     margin-top: 2rem;
     background-color: rgba(253, 246, 253, 1);
     padding: 0 0 4rem 0;
-   
 }
 
 #intro img {
@@ -96,32 +175,28 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 #intro p {
     margin-top: 100px;
     text-align: justify;
     text-justify: inter-word;
-    color:  #221737;
-    
+    color: #221737;
 }
 
-.intro-text{
-   
+.intro-text {
     width: 700px;
-    margin-top: 150px;
+   
     font-weight: 500;
-    padding: 0px 72px 0px 72px;
+    padding: 0px 64px 0px 72px;
 }
-
 
 .intro-content {
     background-color: #fff;
     margin: 1rem 0;
     border-radius: 0.9rem;
-    border: 2px solid #6C2863;
-    
+    border: 2px solid #6c2863;
 }
 .intro-header {
     padding: 0.5rem 3rem 0.5rem 1rem;
@@ -132,18 +207,24 @@ margin-bottom: 5rem;
     display: flex;
     align-items: center;
     position: relative;
-    color: var(--30, #6C2863);;
+    color: var(--30, #6c2863);
     cursor: pointer;
 }
 .intro-header::after {
-    content: "\002b";
+    content: "";
     font-size: 2rem;
     position: absolute;
     right: 1rem;
-    color: var(--first-color);
+    background-image: url(../img/down.svg);
+    transition: transform 0.3s ease-out;
+    width: 1.5rem;
+    height: 1rem;
+    background-size: cover;
+    background-position: center;
+    color: #000;
 }
 .intro-header.active::after {
-    content: "\2212";
+    transform: rotate(180deg);
 }
 .intro-body {
     max-height: 0;
@@ -158,7 +239,38 @@ margin-bottom: 5rem;
     border-top: 1px solid var(--first-color);
     font-size: 1rem;
     font-weight: 400;
-    
 }
 
+.timeline-header {
+    margin-top: 100px;
+}
 
+.timeline-main img {
+    margin-top: 50px;
+    padding: 0 0 100px 0;
+}
+
+#anthem {
+    background-color: rgba(253, 246, 253, 1);
+}
+.anthem-header {
+    margin-top: 100px;
+}
+
+.anthem-main img {
+    margin-top: 50px;
+    padding: 0 0 100px 0;
+}
+
+.dokumentasi-header {
+    margin-top: 100px;
+}
+
+.dokumentasi-main img {
+    margin-top: 50px;
+    padding: 0 0 100px 0;
+}
+
+.footer {
+    padding: 0 0 20px 0;
+}

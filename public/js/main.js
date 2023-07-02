@@ -12,3 +12,16 @@ ItemHeaders.forEach((ItemHeader) => {
         }
     });
 });
+
+function showLoginBox() {
+    var loginBox = document.getElementById("loginBox");
+    var overlay = document.getElementById("overlay");
+    overlay.classList.add('overlay');
+    loginBox.style.display = "block";
+    loginBox.style.opacity = 1;
+    var body = document.getElementsByTagName("body")[0];
+    body.style.overflow = "hidden";   
+   
+}
+
+		
