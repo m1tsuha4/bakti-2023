@@ -27,6 +27,7 @@ body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    cursor:auto;
     z-index: 9999;
 }
 
@@ -94,6 +95,18 @@ body {
     font-weight: 600;
 }
 
+/* .login-box button:hover {
+    background-color: var(--10, #f2f2ff);
+} */
+
+nav {
+    z-index: 999;
+}
+
+.nav-link active {
+    color: #6c2863;
+}
+
 .nav-link {
     color: #6c2863;
     font-weight: 400;
@@ -109,6 +122,15 @@ body {
     color: #6c2863;
     font-weight: 600;
 }
+
+#closeIcon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+    width: 18px; /* Sesuaikan ukuran gambar */
+    height: 18px; /* Sesuaikan ukuran gambar */
+  }
 
 .btn-nav {
     margin-top: 3px;
@@ -167,6 +189,7 @@ body {
     margin-top: 2rem;
     background-color: rgba(253, 246, 253, 1);
     padding: 0 0 4rem 0;
+    
 }
 
 #intro img {
@@ -178,16 +201,22 @@ body {
     margin-bottom: 5rem;
 }
 
+
+
 #intro p {
     margin-top: 100px;
+    position: relative;
+    left: 36px;
     text-align: justify;
     text-justify: inter-word;
     color: #221737;
+    
 }
+
+
 
 .intro-text {
     width: 700px;
-   
     font-weight: 500;
     padding: 0px 64px 0px 72px;
 }
@@ -214,6 +243,7 @@ body {
     content: "";
     font-size: 2rem;
     position: absolute;
+    /* z-index: 9998; */
     right: 1rem;
     background-image: url(../img/down.svg);
     transition: transform 0.3s ease-out;
@@ -222,6 +252,7 @@ body {
     background-size: cover;
     background-position: center;
     color: #000;
+    
 }
 .intro-header.active::after {
     transform: rotate(180deg);

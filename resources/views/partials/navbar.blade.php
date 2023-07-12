@@ -13,16 +13,16 @@
     </a>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
         <li class="nav-item">
-          <a class="nav-link active" style="color: #6C2863;" aria-current="page" href="#">Beranda</a>
+          <a class="nav-link {{($tittle === "Beranda") ? 'active' : '' }} " style="color: #6c2863;" aria-current="page" href="/">Beranda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/maskot">Maskot</a>
+          <a class="nav-link {{($tittle === "Maskot") ? 'active' : '' }}" style="color: #6c2863;" href="/maskot">Maskot</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Peta</a> 
+          <a class="nav-link {{($tittle === "Peta") ? 'active' : '' }}" style="color: #6c2863;" href="/peta">Peta</a> 
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Merchandise</a>
+          <a class="nav-link {{($tittle === "Merchandise") ? 'active' : '' }}" style="color: #6c2863;" href="/merchandise">Merchandise</a>
         </li>
         <li class="nav-item">
         <div class="btn btn-first btn-nav" href="/login" role="button" onclick="showLoginBox()">
@@ -31,7 +31,8 @@
         <h2>Masuk Akun</h2>
         <input class="input-nim" type="text" placeholder="NIM">
         <input class="input-password" type="password" placeholder="Password">
-        <button>Masuk</button>
+      <a href="/edit-profile"><button>Masuk</button></a>  
+        <img id="closeIcon" src="img/tutup.svg" alt="" onclick="closeLoginBox()">
     </div>
         </div>
         <div id="overlay"></div>
