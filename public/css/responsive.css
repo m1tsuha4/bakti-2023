@@ -1,0 +1,103 @@
+
+@media screen and (max-width: 480px) {
+
+    .navbar-nav .nav-link{
+        margin-top: 15px;
+        margin-bottom: -50px;
+       
+    }
+
+    .btn-nav{
+        margin-top: 30px;
+    }
+
+   .navbar{
+    position: fixed;
+   }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-toggler.ms-auto {
+        margin-left:80%!important;
+    }
+
+    .nav-logo{
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        left: 16px;
+        margin-top: 28px;
+    }
+
+    #hero img {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 120px;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .col-4 {
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+    .col-9 {
+        margin-right: 3rem;
+        margin-top: 1em;
+    }
+    
+
+   /* .col-4 {
+    width: 200px;
+  } */
+
+  .d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom dengan lebar yang sama */
+    gap: 10px;
+  }
+
+  .mx-auto {
+    margin-left: 0!important;
+  }
+
+  .btn-second {
+    margin-top: 48px;
+    
+    height: 32px;
+    font-size: px;
+    
+  }
+   button.btn{
+    width: 71px;
+    font-size: 12px;
+   }
+
+   /* intro */
+   .intro-img {
+    width:70%;
+    margin-left: 75px;
+   }
+   
+   .intro-text {
+    width: 80%;
+    margin-top: 150px;
+    margin-left: -525px;
+   }
+#intro {    
+ width: 100%;
+}
+ #intro .row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+}
+

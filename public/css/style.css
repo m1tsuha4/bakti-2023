@@ -14,90 +14,64 @@ body {
     z-index: 9998; /* Lebih rendah dari pop-up agar pop-up tetap di atas */
   }
   
-
-.login-box {
-    width: 25rem;
-    height: 25rem;
+  
+.daftar {
+    width: 50rem;
+    height: 28rem;
     background: var(--100, #fbebfc);
     border-radius: 1.5625rem;
     position: absolute;
-    left: 432px;
-    top: 108px;
+    left: 242px;
+    top: 76px;
     text-align: center;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     cursor:auto;
     z-index: 9999;
 }
 
-.login-box h2 {
-    color: #000;
-    margin-top: 84px;
-    font-size: 28px;
+.daftar h2 {
+    color: #6c2863;
+    margin-top: 4rem;
+    font-size: 1.75rem;
     font-weight: 700;
     line-height: normal;
 }
 
-.input-nim {
-    width: 220px;
-    height: 40px;
-    display: block;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-left: 89px;
-    margin-top: 20px;
+.form-control {
+    /* width: 220px;
+    height: 40px; */
     border: none;
     border-radius: 14px;
     background: #fff;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
     font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    /* transition: none; */
 }
-
-.input-password {
-    width: 220px;
-    height: 40px;
-    display: block;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-left: 89px;
-    border: none;
-    border-radius: 15px;
-    background: #fff;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.login-box input[type="text"],
-.login-box input[type="password"] {
-    padding: 20px;
-    margin-bottom: 10px;
-    display: block;
-    font-weight: 500;
-    outline: none;
-}
-
-.login-box input[type="text"]::placeholder,
-.login-box input[type="password"]::placeholder {
+.daftar input[type="text"]::placeholder,
+.daftar input[type="password"]::placeholder {
     color: rgba(0, 0, 0, 0.2);
 }
 
-.login-box button {
-    border: none;
-    width: 220px;
-    height: 40px;
-    background: var(--30, #6c2863);
-    display: block;
-    align-items: center;
-    margin-top: 35px;
-    margin-left: 89px;
-    border-radius: 14px;
-    color: #fff;
-    font-weight: 600;
+.btn.btn-nav.btn-first.button{
+    padding: 1rem 5.25rem;
 }
 
-/* .login-box button:hover {
-    background-color: var(--10, #f2f2ff);
-} */
+.show-password-icon,
+.hide-password-icon {
+  position: relative;
+  right: -120px;
+  top: -48%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.hide-password-icon{
+   visibility: hidden ;   
+}
+
 
 nav {
     z-index: 999;
@@ -115,7 +89,7 @@ nav {
 .nav-color {
     background-color: #fff;
     transition: all ease-in-out 0.3s;
-    /* box-shadow: 0 2px 5px 0 rgba(164, 164, 173, 0.2); */
+    box-shadow: 0 2px 5px 0 rgba(164, 164, 173, 0.2);
 }
 
 .nav-link.active {
@@ -127,6 +101,15 @@ nav {
     position: absolute;
     top: 30px;
     left: 30px;
+    cursor: pointer;
+    width: 18px; /* Sesuaikan ukuran gambar */
+    height: 18px; /* Sesuaikan ukuran gambar */
+  }
+
+  #closeIcon2 {
+    position: absolute;
+    top: -132px;
+    left: 10px;
     cursor: pointer;
     width: 18px; /* Sesuaikan ukuran gambar */
     height: 18px; /* Sesuaikan ukuran gambar */
@@ -179,6 +162,48 @@ nav {
     color: #6c2863;
 }
 
+.nav-logo {
+    display: none;
+}
+
+.login-box {
+    width: 30rem;
+    height: 30rem;
+    background: var(--100, #fbebfc);
+    border-radius: 1.5625rem;
+    position: absolute;
+    left: 385px;
+    top: 60px;
+    text-align: center;
+    box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor:auto;
+    z-index: 9999;
+}
+
+.login-box h2 {
+    color: #6c2863;
+    margin-top: 5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn-third {
+    border-radius: 10px;
+    background-color: #6c2863;
+    color: #fff;
+    font-weight: 600; 
+    padding: 1.2rem 9.5rem;
+    margin-top: 1em;
+}
+
+.btn-third:hover {
+    background-color: rgba(108, 40, 99, 1);
+    color: #fff;
+}
+
 #hero img {
     width: fit-content;
     display: block;
@@ -212,8 +237,6 @@ nav {
     color: #221737;
     
 }
-
-
 
 .intro-text {
     width: 700px;
@@ -304,4 +327,8 @@ nav {
 
 .footer {
     padding: 0 0 20px 0;
+}
+
+a {
+   text-decoration: none;
 }

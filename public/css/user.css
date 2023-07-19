@@ -10,14 +10,17 @@ body {
 
 .sidebar {
     position: fixed;
-    width: 265px;
+    width: 20%;
     height: 100%;
     background-color: #6C2863;
     display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
+
+
 
 .header {
     
@@ -116,7 +119,7 @@ nav{
 
 .line {
     position: relative;
-    left: -84px;
+    left: -80px;
     top: 0px;
     /* border-radius: 5px; */
     
@@ -132,28 +135,324 @@ nav{
     height: auto;
 }
 
-.notif-header {
-    width: 30px;
-    position: absolute;
-    top: 36px;
-    right: 286px; 
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+    margin-left: 3em; /* Atur jarak antara gambar profil dan teks */
+  }
+  
+  .name-header {
+    margin-left: 5px; /* Atur jarak antara gambar profil dan teks */
+    
+  }
+
+
+  .welcome-content {
+    margin-left: 20%;
+    
+  }
+
+  .profile-welcome{
+    width: 4.5rem;
+    margin-left: 6rem;
+  }
+
+  .text-content{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .countdown-content{
+    margin-left: 6rem;
+  }
+
+  .countdown-content h4{
+    color: #6C2863; 
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .countdown-box{
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.9375rem;
+    background: var(--50, #FDF6FD);
+    box-shadow: 0px 2.5496182441711426px 2.5496182441711426px 0px rgba(0, 0, 0, 0.25);
+    
+  }
+
+  .card-body h6 {
+   
+    color: #6C2863;
+    font-size: 0.63738rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  
+  
+
+  .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+   
+  }
+
+  .countdown-fill{
+    justify-content: center;
+    align-items: center; 
+    border-radius: 0.79675rem;
+    background: var(--30, #6C2863);
+    
+  }
+  
+ .countdown-fill p {
+    color: var(--100, #FBEBFC);
+    font-size: 2.54963rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+   margin: 0;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .tugas-content {
+    margin-left: 6rem;
+   
+ }
+
+ .tugas-content h4 {
+    color: #6C2863; 
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+ }
+ 
+.tugas-box {
+    border: none;
+    /* display: flex;
+    justify-content: center; */
+    border-radius: 0.9375rem;
+    background: var(--50, #FDF6FD);
+    box-shadow: 0px 2.5496182441711426px 2.5496182441711426px 0px rgba(0, 0, 0, 0.25);
 }
 
-.profile-header {
-    width: 30px;
-    position: absolute;
-    top: 36px;
-    right: 224px; 
+.tugas-box-late {
+    border: none;
+    /* display: flex;
+    justify-content: center; */
+    border-radius: 0.9375rem;
+    background: #B73639;
+    box-shadow: 0px 2.5496182441711426px 2.5496182441711426px 0px rgba(0, 0, 0, 0.25);
 }
 
-.name-header {
-    position: absolute;
-    top: 42px;
-    right: 105px; 
-    font-size: 16px;
+.note-tugas {
+    display: flex;
+    gap: 1rem;
+}
+
+.note1{
+    color: #6C2863;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
     font-weight: 400;
+    line-height: normal;
+}
+
+.note2{
+    color: #B73639;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tugas-box,
+.tugas-box-late {
+    display: flex;
+    justify-content: center;
+    align-items:left;
+}
+
+.lihat-tugas {
+    color: #6C2863;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.upload-header {
+    color: #6C2863;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.upload-header-late{
+    color: #fff;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.deadline-upload {
+    color: #6C2863;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.deadline-upload-late{
+    color: #fff;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.upload-teks {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn-upload {
+    border-radius: 0.625rem;
+    background: var(--30, #6C2863);
+    padding: 0.5rem 1.875rem;
+    color: var(--50, #FDF6FD);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn-upload-late {
+    border-radius: 0.625rem;
+    background: #5A0909;
+    padding: 0.5rem 1.875rem;
+    color: var(--50, #FDF6FD);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn-upload:hover{
+    background-color: #6C2863;
+    color: #fff;
+}
+
+.btn-upload-late:hover{
+    background-color: #5A0909;
+    color: #fff;
+}
+
+.lihat-tugas a {
     color: #6C2863;
 }
+
+.kalender-content h4{
+    color: #6C2863; 
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.kegiatan-content h4 {
+    color: #6C2863; 
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-kegiatan{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.kegiatan-box {
+    border: none;
+    border-radius: 0.9375rem;
+    background: var(--50, #FDF6FD);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* Profile css */
+  .welcome-header h2 {
+    color: #6C2863;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+
+  .welcome-header p {
+    color: #6C2863;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .btn-first{
+    border-radius: 0.6rem;
+    background: #6C2863;
+    color: var(--50, #FDF6FD);
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .btn-first:hover{
+    background-color: rgba(108, 40, 99, 1);
+    color: #fff;
+  }
+
+  .download-content img {
+    width: 1.2rem;
+  }
+
 
 .main-welcome {
     width: 815px;
@@ -327,6 +626,41 @@ nav{
     position: relative;
     left: -65px;
 }
+
+
+.custom-datepicker {
+    position: relative;
+}
+
+.custom-datepicker input[type="date"]::-webkit-calendar-picker-indicator {
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.custom-datepicker .custom-icon {
+    position: absolute;
+    top: 73%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    /* Ganti dengan gambar ikon kalender yang Anda inginkan */
+    background-image: url("../img/calendar.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
 
 .departemen{
     position: absolute;
@@ -588,6 +922,9 @@ top: 165px;
     margin-bottom: 20px;
 }
 
+strong {
+    cursor: pointer;
+}
 
 .update-box button {
     border: none;
@@ -602,6 +939,8 @@ top: 165px;
     color: #fff;
     font-weight: 600;
 }
+
+
 
 .drag-option {
     width: 300px;
@@ -627,9 +966,30 @@ margin-left: 50px;
     line-height: normal;
 }
 
+
+
+.uploaded img{
+    width: 28px;
+    margin-top: 2px;
+}
+
 .drag-option.uploaded {
-    width: 200px;
-    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height:  50px;
+  }
+
+  .drag-option.uploaded button{
+    margin-top: 100px;
+    
+  }
+
+  .drag-option.uploaded p {
+    font-size: 16px;
   }
 
 
@@ -643,7 +1003,20 @@ margin-left: 50px;
   }
 
 
+  .show-password-icon,
+  .hide-password-icon {
+    position: absolute;
+    top: 73%;
+    right: 40px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
 
+  .hide-password-icon {
+    display: none;
+  }
+
+  
 
 
 
