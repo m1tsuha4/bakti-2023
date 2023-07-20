@@ -19,7 +19,7 @@
           <a class="nav-link {{($tittle === "Maskot") ? 'active' : '' }}" style="color: #6c2863;" href="/maskot">Maskot</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{($tittle === "Peta") ? 'active' : '' }}" style="color: #6c2863;" href="/peta">Peta</a> 
+          <a class="nav-link {{($tittle === "Peta") ? 'active' : '' }}" style="color: #6c2863;" href="/peta">Peta</a>
         </li>
         {{-- <li class="nav-item">
           <a class="nav-link {{($tittle === "Merchandise") ? 'active' : '' }}" style="color: #6c2863;" href="/merchandise">Merchandise</a>
@@ -63,11 +63,33 @@
               </div>
             </form>       
           </div>
+            @if (Route::has('login'))
+                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
+                    @auth
+                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+        <div class="btn btn-first btn-nav" href="{{ route('login') }}" role="button" onclick="showLoginBox()">
+         Masuk
+          <div id="loginBox" class="login-box" style="display: none;">
+        <h2>Masuk Akun</h2>
+        <input class="input-nim" type="text" placeholder="NIM">
+        <input class="input-password" type="password" placeholder="Password">
+      <a href="{{ route('login') }}"><button>Masuk</button></a>
+        <img id="closeIcon" src="img/tutup.svg" alt="" onclick="closeLoginBox()">
+    </div>
         </div>
         <div id="overlay"></div>
         </li>
       </ul>
     </div>
   </div>
-</nav>  
+</nav>
     </header>
