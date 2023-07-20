@@ -17,13 +17,7 @@
    <div class="content">
     {{-- <div class="grid1"></div>
     <div class="grid2"></div> --}}
-    <header>
-        <div class="main-header">
-            <img class="notif-header" src="img/notification.svg" alt="">
-            <img class="profile-header" src="img/profile-circle.svg" alt="" class="">
-            <h6 class="name-header" >Aina Malyona</h6>
-        </div>
-    </header>
+    @include('partials.header')
     <div class="main-welcome">
         <h3 class="text-welcome">Selamat Datang di BAKTI, Aina </h3>
         <img class="img-welcome" src="img/hai.svg" alt="">
@@ -75,16 +69,16 @@
         <div class="option-l" onclick="selectOption('option-l')">Laki Laki</div>
     </div>
 </div>
-<div class="tanggal-lahir">
+<div class="tanggal-lahir custom-datepicker">
     <h5 class="edit-tgllhr">Tanggal Lahir</h5>
-    <input class="input-tgllhr" type="text" placeholder="Tanggal Lahir">
-    <img src="img/calendar.svg" alt="" class="edit">
+    <input class="input-tgllhr" type="date" placeholder="Tanggal Lahir">
+    <span class="custom-icon"></span>
 </div>
     <div class="sandi-main">
         <h2 class="sandi-header">Ganti Kata Sandi</h2>
         <div class="sandi-lama">
             <h5 class="edit-sandi1">Kata Sandi Lama</h5>
-            <input class="input-sandi1" type="password" placeholder="Sandi Lama">
+            <input class="input-sandi1" type="password" placeholder="Sandi Lama" >
             
         </div>
         <div class="sandi-baru">

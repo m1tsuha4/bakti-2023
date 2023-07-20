@@ -9,12 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     
   </head>
   <body>
 
     
   @include('partials.navbar')
+
+  <div class="nav-logo">
+     <img src="/img/logo-unand.png" alt="Bootstrap" width="42" height="42">
+    <img src="/img/logo-bakti.png" alt="Bootstrap" width="42" height="42">
+
+  </div>
 
    <!-- ========== Start Login ========== -->
 
@@ -26,7 +33,29 @@
        <img src="img/bakti2023.svg" class="img-fluid" alt="Bakti2023" >
       </div>
       <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-style btn-first mt-5 fw-600" type="button" onclick="showLoginBox()" >Masuk</button>
+        <button class="btn btn-style btn-first mt-5 fw-600" type="button" onclick="showLoginBox()" >
+          Masuk
+        <form id="loginBox" class="login-box" style="display: none">
+          <div class="row justify-content-center mb-4">
+            <h2>Masuk Akun</h2>
+          </div>
+            <div class="row justify-content-center g-5 mb-4">
+              <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="NIM" aria-label="First name">
+              </div>
+            </div>
+            <div class="row justify-content-center g-5 ">
+              <div class="col-sm-8">
+                <input type="password" class="form-control" placeholder="Password" aria-label="First name">
+              </div>
+             <a href="/dashboard">
+              <div class="row justify-content-center">
+                <div class="btn btn-nav btn-third">Masuk</div>
+               </div></a> 
+              <img id="closeIcon2" src="img/tutup.svg" alt="Close" onclick="closeLoginBox()">
+            </div>
+        </form>
+        </button>
         <button class="btn btn-style btn-second" type="button">ID Card</button>
       </div>
       </div>
