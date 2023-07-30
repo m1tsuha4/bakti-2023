@@ -12,17 +12,18 @@ body {
     /* background-color: rgba(0, 0, 0, 0.8);  */
     backdrop-filter: blur(5px); /* Efek blur */
     z-index: 9998; /* Lebih rendah dari pop-up agar pop-up tetap di atas */
-  }
-  
-  
+}
+
+
 .daftar {
-    width: 50rem;
-    height: 28rem;
+    width: 25rem;
+    height: 34rem;
     background: var(--100, #fbebfc);
     border-radius: 1.5625rem;
     position: absolute;
-    left: 242px;
-    top: 76px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25);
     opacity: 0;
@@ -31,13 +32,26 @@ body {
     z-index: 9999;
 }
 
-.daftar h2 {
+
+
+.daftar p {
     color: #6c2863;
     margin-top: 4rem;
     font-size: 1.75rem;
     font-weight: 700;
     line-height: normal;
 }
+
+.button-daftar{
+    padding: 1.2rem 9rem!important;
+    border-radius: 0.8rem!important;
+    margin: 0!important;
+}
+
+.input-password{
+    height: 48px!important;
+}
+
 
 .form-control {
     /* width: 220px;
@@ -61,20 +75,39 @@ body {
 
 .show-password-icon,
 .hide-password-icon {
-  position: relative;
-  right: -120px;
-  top: -48%;
-  transform: translateY(-50%);
-  cursor: pointer;
+    position: relative;
+    right: -120px;
+    top: -80%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#eyeicon5 {
+    margin: 0!important;
+    position: relative;
+    right: -270px;
+    top: -100%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .hide-password-icon{
-   visibility: hidden ;   
+    visibility: hidden ;
 }
 
+.costum-margin{
+    margin-bottom: 0.7rem!important;
+}
 
 nav {
     z-index: 999;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
 }
 
 .nav-link active {
@@ -104,16 +137,16 @@ nav {
     cursor: pointer;
     width: 18px; /* Sesuaikan ukuran gambar */
     height: 18px; /* Sesuaikan ukuran gambar */
-  }
+}
 
-  #closeIcon2 {
+#closeIcon2 {
     position: absolute;
     top: -132px;
     left: 10px;
     cursor: pointer;
     width: 18px; /* Sesuaikan ukuran gambar */
     height: 18px; /* Sesuaikan ukuran gambar */
-  }
+}
 
 .btn-nav {
     margin-top: 3px;
@@ -172,8 +205,9 @@ nav {
     background: var(--100, #fbebfc);
     border-radius: 1.5625rem;
     position: absolute;
-    left: 385px;
-    top: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25);
     opacity: 0;
@@ -194,7 +228,7 @@ nav {
     border-radius: 10px;
     background-color: #6c2863;
     color: #fff;
-    font-weight: 600; 
+    font-weight: 600;
     padding: 1.2rem 9.5rem;
     margin-top: 1em;
 }
@@ -204,9 +238,27 @@ nav {
     color: #fff;
 }
 
+.checkbox,
+.forget-password{
+    color: #6c2863;
+    font-weight: 400;
+}
+
+.checkbox{
+    display: flex;
+}
+
+.hero-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem 5%;
+
+}
+
 #hero img {
     width: fit-content;
     display: block;
+    justify-content: end;
     margin-top: 170px;
 }
 
@@ -214,7 +266,7 @@ nav {
     margin-top: 2rem;
     background-color: rgba(253, 246, 253, 1);
     padding: 0 0 4rem 0;
-    
+
 }
 
 #intro img {
@@ -235,7 +287,7 @@ nav {
     text-align: justify;
     text-justify: inter-word;
     color: #221737;
-    
+
 }
 
 .intro-text {
@@ -275,7 +327,6 @@ nav {
     background-size: cover;
     background-position: center;
     color: #000;
-    
 }
 .intro-header.active::after {
     transform: rotate(180deg);
@@ -295,6 +346,8 @@ nav {
     font-weight: 400;
 }
 
+
+
 .timeline-header {
     margin-top: 100px;
 }
@@ -306,9 +359,17 @@ nav {
 
 #anthem {
     background-color: rgba(253, 246, 253, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+
 }
+
 .anthem-header {
     margin-top: 100px;
+    margin-bottom: 2rem;
+
 }
 
 .anthem-main img {
@@ -330,5 +391,15 @@ nav {
 }
 
 a {
-   text-decoration: none;
+    text-decoration: none;
+}
+
+.form-forgot{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.9375rem;
+    background: var(--50, #FDF6FD);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }

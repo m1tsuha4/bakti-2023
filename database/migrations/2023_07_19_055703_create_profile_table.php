@@ -15,14 +15,13 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->string('foto');
-            $table->string('nama_lengkap');
-            $table->string('fakultas');
-            $table->string('department');
-            $table->enum('jenis_kelamin',['L','P']);
-            $table->date('tanggal_lahir');
-            $table->integer('no_absen');
-            $table->integer('kelompok');
+            $table->string('foto')->nullable();
+            $table->string('fakultas')->nullable();
+            $table->string('department')->nullable();
+            $table->string('jenis_kelamin')->nullable();
+            $table->date('tanggal_lahir')->nullable();
+            $table->integer('no_absen')->nullable();
+            $table->string('kelompok')->nullable();
             $table->timestamps();
         });
     }

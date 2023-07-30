@@ -1,3 +1,48 @@
+const Penugasan = document.querySelectorAll(".penugasan-box");
+Penugasan.forEach((ItemHeader) => {
+    ItemHeader.addEventListener("click", (event) => {
+        ItemHeader.classList.toggle("active");
+
+        const ItemBody = ItemHeader.nextElementSibling;
+
+        if (ItemHeader.classList.contains("active")) {
+            ItemBody.style.maxHeight = ItemBody.scrollHeight + "px";
+        } else {
+            ItemBody.style.maxHeight = 0;
+        }
+    });
+});
+
+const PenugasanLate = document.querySelectorAll(".penugasan-box-late");
+PenugasanLate.forEach((ItemHeader) => {
+    ItemHeader.addEventListener("click", (event) => {
+        ItemHeader.classList.toggle("active");
+
+        const ItemBody = ItemHeader.nextElementSibling;
+
+        if (ItemHeader.classList.contains("active")) {
+            ItemBody.style.maxHeight = ItemBody.scrollHeight + "px";
+        } else {
+            ItemBody.style.maxHeight = 0;
+        }
+    });
+});
+
+const PenugasanDone = document.querySelectorAll(".penugasan-box-done");
+PenugasanDone.forEach((ItemHeader) => {
+    ItemHeader.addEventListener("click", (event) => {
+        ItemHeader.classList.toggle("active");
+
+        const ItemBody = ItemHeader.nextElementSibling;
+
+        if (ItemHeader.classList.contains("active")) {
+            ItemBody.style.maxHeight = ItemBody.scrollHeight + "px";
+        } else {
+            ItemBody.style.maxHeight = 0;
+        }
+    });
+});
+
 const ItemHeaders = document.querySelectorAll(".intro-header");
 ItemHeaders.forEach((ItemHeader) => {
     ItemHeader.addEventListener("click", (event) => {
@@ -26,14 +71,14 @@ function showDaftarBox() {
 
 
 function showLoginBox() {
-  var loginBox = document.getElementById("loginBox");
-  var overlay = document.getElementById("overlay");
-  overlay.classList.add("overlay");
- loginBox.style.display = "block";
- loginBox.style.opacity = 1;
-  overlay.style.display = "block";
-  var body = document.getElementsByTagName("body")[0];
-  body.style.overflow = "hidden";
+    var loginBox = document.getElementById("loginBox");
+    var overlay = document.getElementById("overlay");
+    overlay.classList.add("overlay");
+    loginBox.style.display = "block";
+    loginBox.style.opacity = 1;
+    overlay.style.display = "block";
+    var body = document.getElementsByTagName("body")[0];
+    body.style.overflow = "hidden";
 }
 
 
@@ -53,18 +98,18 @@ function closeBox() {
 }
 
 function closeLoginBox() {
-  var Box = document.getElementById("loginBox");
-  var overlay = document.getElementById("overlay");
-  overlay.classList.remove("overlay");
-  Box.style.opacity = 0;
-  var body = document.getElementsByTagName("body")[0];
-  Box.classList.remove("overlay");
+    var Box = document.getElementById("loginBox");
+    var overlay = document.getElementById("overlay");
+    overlay.classList.remove("overlay");
+    Box.style.opacity = 0;
+    var body = document.getElementsByTagName("body")[0];
+    Box.classList.remove("overlay");
 
-  setTimeout(function () {
-      Box.style.display = "none";
-      overlay.style.display = "none";
-      body.style.overflow = "auto";
-  }, 100); // Waktu animasi fade-out, dalam milidetik (misalnya, 500ms)
+    setTimeout(function () {
+        Box.style.display = "none";
+        overlay.style.display = "none";
+        body.style.overflow = "auto";
+    }, 100); // Waktu animasi fade-out, dalam milidetik (misalnya, 500ms)
 }
 
 let selectedOption = null;
@@ -171,54 +216,182 @@ function handleBrowse() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Kode JavaScript Anda di sini
-  let eyeicon = document.getElementById("eyeicon");
-  let password = document.getElementById("password-input");
+    // Kode JavaScript Anda di sini
 
-  eyeicon.onclick = function() {
-    if (password.type == "password") {
-      password.type = "text";
-      eyeicon.src = "img/eye.svg";
-    } else {
-      password.type = "password";
-      eyeicon.src = "img/eye-slash.svg";
+    let eyeicon5 = document.getElementById("eyeicon5");
+    let password5 = document.getElementById("sandiMasuk");
+
+    eyeicon5.onclick = function() {
+        if (password5.type == "password") {
+            password5.type = "text";
+            eyeicon5.src = "img/eye.svg";
+        } else {
+            password5.type = "password";
+            eyeicon5.src = "img/eye-slash.svg";
+        }
     }
-  }
-
-  let eyeicon2 = document.getElementById("eyeicon2");
-  let password2 = document.getElementById("password-input2");
-
-  eyeicon2.onclick = function() {
-    if (password2.type == "password") {
-      password2.type = "text";
-      eyeicon2.src = "img/eye.svg";
-    } else {
-      password2.type = "password";
-      eyeicon2.src = "img/eye-slash.svg";
-    }
-  }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Kode JavaScript Anda di sini
 
+    let eyeicon3 = document.getElementById("eyeicon3");
+    let password3 = document.getElementById("sandiDaftar3");
+
+    eyeicon3.onclick = function() {
+        if (password3.type == "password") {
+            password3.type = "text";
+            eyeicon3.src = "img/eye.svg";
+        } else {
+            password3.type = "password";
+            eyeicon3.src = "img/eye-slash.svg";
+        }
+    }
+    let eyeicon4 = document.getElementById("eyeicon4");
+    let password4 = document.getElementById("sandiDaftar4");
+
+    eyeicon4.onclick = function() {
+        if (password4.type == "password") {
+            password4.type = "text";
+            eyeicon4.src = "img/eye.svg";
+        } else {
+            password4.type = "password";
+            eyeicon4.src = "img/eye-slash.svg";
+        }
+    }
+});
 
 
 var countDownDate = new Date("August 18, 2023 00:00:00").getTime();
 var x = setInterval(function(){
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
 
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
 
 
 },1000);
+
+
+
+
+function showNotification() {
+    const emailInput = document.getElementById('exampleFormControlInput1').value;
+    const notification = document.getElementById('notification');
+    if (emailInput !== "") {
+        notification.style.display = 'block';
+
+        // Dapatkan elemen form berdasarkan ID
+        var form = document.getElementById('email');
+        // Lakukan submit form
+        form.submit();
+    }
+}
+
+//   sidebar aktif
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Kode JavaScript Anda di sini
+    let eyeicon = document.getElementById("eyeicon");
+    let password = document.getElementById("sandiLama");
+
+    eyeicon.onclick = function() {
+        if (password.type == "password") {
+            password.type = "text";
+            eyeicon.src = "img/eye.svg";
+        } else {
+            password.type = "password";
+            eyeicon.src = "img/eye-slash.svg";
+        }
+    }
+
+    let eyeicon2 = document.getElementById("eyeicon2");
+    let password2 = document.getElementById("sandiBaru");
+
+    eyeicon2.onclick = function() {
+        if (password2.type == "password") {
+            password2.type = "text";
+            eyeicon2.src = "img/eye.svg";
+        } else {
+            password2.type = "password";
+            eyeicon2.src = "img/eye-slash.svg";
+        }
+    }
+});
+
+function toggleColor(activeInputId, inactiveInputId) {
+    const activeInput = document.getElementById(activeInputId);
+    const inactiveInput = document.getElementById(inactiveInputId);
+
+    activeInput.classList.add("active");
+    activeInput.classList.remove("inactive");
+
+    inactiveInput.classList.add("inactive");
+    inactiveInput.classList.remove("active");
+}
+
+// Simulasikan data pengguna dalam bentuk objek atau dari database Anda
+const users = [
+    { nim: '123456789', password: 'password123' },
+    { nim: '987654321', password: 'securepass' }
+];
+
+function showConfirmationDialog() {
+    var dialog = document.getElementById('confirmation-dialog');
+    dialog.style.display = 'block';
+}
+
+function closeDialog() {
+    var dialog = document.getElementById('confirmation-dialog');
+    dialog.style.display = 'none';
+}
+
+document.getElementById('logout-button').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    showConfirmationDialog();
+});
+
+function logout() {
+    closeDialog();
+    // Lakukan tindakan logout
+    window.location.href = "/";
+}
+
+
+// Fungsi untuk menampilkan notifikasi SweetAlert2
+// function showNotification() {
+//     Swal.fire({
+//         icon: 'success',
+//         title: 'Notifikasi',
+//         text: 'Tombol telah ditekan!',
+//     });
+// }
+
+// Fungsi untuk mengarahkan ke halaman selanjutnya setelah notifikasi ditampilkan
+
+//button login
+function submitLoginForm() {
+    var form = document.getElementById('loginBox');
+    form.submit();
+}
+//button daftar
+function submitRegisterForm() {
+    var form = document.getElementById('daftar');
+    form.submit();
+}
+
+
+
+
+
 
