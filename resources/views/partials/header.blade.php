@@ -1,15 +1,16 @@
-<header>
-            <div class="container-fluid  text-end">
-                <div class="row mt-4 me-5">
-                  <div class="col">
-                    <div class="header-wrapper">
-                      <img class="img-fluid notif-header" src="img/notification.svg" alt="">
-                      <div class="profile-info">
-                        <img class="img-fluid profile-header" src="img/profile-circle.svg" alt="">
-                        <h6 class="mt-2 name-header">Aina Malyona</h6>
-                      </div>
-                    </div>
-                  </div>
+<div class="container d-flex justify-content-end">
+    <div class="row mt-2">
+        <div class="col">
+            <div class="header-wrapper">
+                <div class="profile-info">
+                    <img class="img-fluid profile-header" src="{{ $user->profile ? asset('storage/profiles/' . $user->profile->foto) : 'img/add-profile.svg' }}" alt="">
+                    <h6 class="mt-2 name-header">{{$user->name}}</h6>
                 </div>
-              </div>
-</header>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

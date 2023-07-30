@@ -1,21 +1,46 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BAKTI UNAND 2023</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/user.css">
-    
-  </head>
-  <body>
+@extends('layouts.main')
+@section('content')
+    <div class="row">
+        <div class="col welcome-content">
+            <div class="row ms-5 mt-5">
+                <div class="col-6 ukm-kolom ">
+                    <div class="card ukm-main" style="width: 20rem;">
+                        <div class="card-body">
+                            <p class="card-text ukm-header mt-3 mb-4">UKM Neo Telemetri</p>
+                        </div>
+                        <img src="img/play-video.svg" class="card-img-top mb-4" alt="...">
+                        <div class="btn mb-4">Button Tugas</div>
+                    </div>
+                </div>
+                <div class="col-6 ukm-kolom">  <div class="card ukm-main" style="width: 20rem;">
+                        <div class="card-body">
+                            <p class="card-text ukm-header mt-3 mb-4">UKM Penalaran</p>
+                        </div>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/twI-4xFNU7M" title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                        <div class="btn mb-4">Button Tugas</div>
+                    </div></div>
+            </div>
+            <div class="row ms-5 mt-5 mb-5">
+                <div class="col-6 ukm-kolom">  <div class="card ukm-main" style="width: 20rem;">
+                        <div class="card-body">
+                            <p class="card-text ukm-header mt-3 mb-4">UKM Aiesec</p>
+                        </div>
+                        <img src="img/play-video.svg" class="card-img-top mb-4" alt="...">
+                        <div class="btn mb-4">Button Tugas</div>
+                    </div></div>
+                <div class="col-6 ukm-kolom">  <div class="card ukm-main" style="width: 20rem;">
+                        <div class="card-body">
+                            <p class="card-text ukm-header mt-3 mb-4">UKM UKO</p>
+                        </div>
+                        <img src="img/play-video.svg" class="card-img-top mb-4" alt="...">
+                        <div class="btn mb-4">Button Tugas</div>
+                    </div></div>
+            </div>
 
-    @include('partials.sidebar')
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="js/main.js" ></script>
-  </body>
-</html>
+@endsection
+
