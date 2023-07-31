@@ -11,57 +11,73 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/png" href="img/logo-bakti.png">
+
     
   </head>
   <body>
 
     <div class="container-fluid cm-main">
         <div class="row ">
-            <div class="col-md-12 img-group">
-                <img class="img-fluid me-2" style="width:3rem;" src="img/logo-unand.png" alt="">
+            <div data-aos="fade-right" data-aos-duration="1000" class="col-md-12 img-group">
+                <img  class="img-fluid me-2" style="width:3rem;" src="img/logo-unand.png" alt="">
                 <img class="img-fluid" style="width:3rem;" src="img/logo-bakti.png" alt="">
             </div>
             
         </div>
-        <div class="row coming-header">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" class="row coming-header">
             <div class="col-md-6  ">
-                <img src="img/coming.svg" alt="" class="img-fluid img-coming ">
+                <img data-aos="zoom-in-up" data-aos-duration="1000"" src="img/coming.svg" alt="" class="img-fluid img-coming ">
                 <div class="row mt-4 d-flex flex-row">
                   <div class="col-md-6">
-                     <input type="email" class="form-control input-notify" id="exampleFormControlInput1" placeholder="Ketikkan Emailmu disini"></div> 
-                   <div class="col-md-6 d-flex justify-content-start"><button type="button" class="btn btn-coming">Notify Me</button></div> 
+                    <img src="img/coming2.svg" alt="" class="img-fluid img-coming2">
                 </div>
             </div>
-            <div class="col-md-6 ">
-                <div class="row flex flex-row justify-content-end countdown gap-5">
-                        <div class="col-md-2 count-main">
-                            <div class="row  count-hari"><p id="days" >00</p></div>
-                            <p class="count-lable" >Hari</p>
-                            </div>
-                            <div class="col-md-2 count-main">
-                                <div class="row count-hari"><p id="hours" >00</p></div>
-                                <p class="count-lable" >Hari</p>
-                                </div>
-                                <div class="col-md-2 count-main">
-                                    <div class="row count-hari"><p id="minutes" >00</p></div>
-                                    <p class="count-lable" >Hari</p>
-                                    </div>
-                                    <div class="col-md-2 count-main">
-                                        <div class="row count-hari"><p id="seconds" >00</p></div>
-                                        <p class="count-lable" >Hari</p>
-                                        </div>
+            </div>
+            <div class="col-md-6 countdown">
+                <div class="row justify-content-end count gap-5">
+                  <div class="col-md-2 count-main">
+                    <div class="row count-hari"><p id="days">00</p></div>
+                    <p class="count-lable">Hari</p>
+                  </div>
+                  <div class="col-md-2 count-main">
+                    <div class="row count-hari"><p id="hours">00</p></div>
+                    <p class="count-lable">Jam</p>
+                  </div>
+                  <div class="col-md-2 count-main">
+                    <div class="row count-hari"><p id="minutes">00</p></div>
+                    <p class="count-lable">Menit</p>
+                  </div>
+                  <div class="col-md-2 count-main">
+                    <div class="row count-hari"><p id="seconds">00</p></div>
+                    <p class="count-lable">Detik</p>
+                  </div>
+                  <div class="col-md-11 count-final-date"> <!-- Tambahkan kolom tambahan untuk "count-final-date" -->
+                    <div class="row text-start">
+                      <div class="col"><h1>20 Agustus 2023</h1></div>
+                    </div>
+                    <div class="row start coming-announ">
+                      <div class="col"><p><strong>Mark your calendars! </strong>BAKTI 2023 edition coming with surprises</p></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="row text-start count-final-date">
-                    <h1>20 Agustus 2023</h1>
-                </div>
-                <div class="row start coming-announ">
-                    <p><strong>Mark your calendars! </strong>BAKTI 2023 edition coming with surprises</p>
-                </div>
+              </div>
+              
+        </div>
+        <div class="row d-flex justify-content-center ">
+            <div data-aos="zoom-in-right" data-aos-duration="1000" class="blank" >
+                <div class="square1"></div>
+                <div class="square2"></div>
+                <div class="square3"></div>
+                <div class="square4"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="blank" ></div>
-        </div>
+        <div class="col-md-12 mt-5 footer">
+            <img src="img/instagram.svg" class="img-fluid" alt="">
+            <img src="img/youtube.svg" class="img-fluid" alt="">
+            <img src="img/tiktok.svg" class="img-fluid" alt="">
+           </div>
+         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
