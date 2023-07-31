@@ -6,8 +6,6 @@
 
     }
 
-
-
     .btn-nav{
         margin-top: 30px;
     }
@@ -287,6 +285,82 @@
     .card-body h6{
         font-size: 0.5rem;
     }
+
+/* coming soon*/
+
+.cm-main {
+    padding: 2rem 3rem;
+    height: 100vh;
+}
+
+.coming-header{
+    margin-top: 4rem;
+}
+.img-coming{
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.count{
+    gap: 1rem!important;
+    justify-content: center!important;
+}
+
+.countdown{
+    margin-top: 5rem;
+    position: relative;
+    top: 0px;
+}
+
+.count-main{
+    width: 20%;
+}
+
+.count-hari{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.count-hari p{
+    font-size: 1.5rem;
+}
+
+.count-lable{
+    font-size: 0.4rem;
+}
+
+.count-final-date h1{
+    font-size: 0.75rem;
+    /* margin-left: 1.5rem; */
+}
+
+.coming-announ p{
+    font-size: 0.75rem;
+}
+
+.img-coming2{
+    position: relative;
+    top: 320px;
+}
+
+.blank {
+    padding: 0.8rem ;
+    height: 2rem;
+    border: 0.4rem solid #221737;
+    position: relative;
+    top: -300px;
+    margin-bottom: 2rem;
+}
+
+.blank::after,
+.blank::before {
+    inset: 0.5rem;
+}
+
+.footer img{
+    width: 2.5rem;
+}
+
 }
 
 
@@ -529,6 +603,80 @@
 
     }
 
+    /* coming soon*/
+
+.cm-main {
+    padding: 2rem 3rem;
+    height: 100vh;
+}
+
+.coming-header{
+    margin-top: 4rem;
+}
+.img-coming{
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.count{
+    gap: 1rem!important;
+    justify-content: center!important;
+}
+
+.countdown{
+    margin-top: 5rem;
+    position: relative;
+    top: 0px;
+}
+
+.count-main{
+    width: 20%;
+}
+
+.count-hari{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.count-hari p{
+    font-size: 1.5rem;
+}
+
+.count-lable{
+    font-size: 0.6rem;
+}
+
+.count-final-date h1{
+    font-size: 0.75rem;
+}
+
+.coming-announ p{
+    font-size: 0.75rem;
+}
+
+.img-coming2{
+    position: relative;
+    top: 320px;
+}
+
+.blank {
+    padding: 0.8rem ;
+    height: 2.5rem;
+    border: 0.4rem solid #221737;
+    position: relative;
+    top: -280px;
+    margin-bottom: 2rem;
+}
+
+.blank::after,
+.blank::before {
+    inset: 0.5rem;
+}
+
+.footer img{
+    width: 2.5rem;
+}
+
 }
 
 
@@ -707,4 +855,160 @@
         justify-content: flex-start;
     }
 
+    /* coming soon*/
+
+.cm-main {
+    padding: 2rem 3rem;
+    height: 100vh;
+}
+
+.coming-header{
+    margin-top: 4rem;
+}
+.img-coming{
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.count{
+    gap: 0.5rem!important;
+    justify-content: center!important;
+}
+
+.countdown{
+    margin-top: 5rem;
+    position: relative;
+    top: 10px;
+}
+
+.count-main{
+    width: 20%;
+}
+
+.count-hari{
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+.count-hari p{
+    font-size: 1.8rem;
+}
+
+.count-lable{
+    font-size: 0.6rem;
+}
+
+.count-final-date h1{
+    font-size: 1rem;
+}
+
+.coming-announ p{
+    font-size: 1rem;
+}
+
+.img-coming2{
+    position: relative;
+    top: 320px;
+}
+
+.blank {
+    padding: 0.8rem ;
+    height: 3.2rem;
+    border: 0.4rem solid #221737;
+    position: relative;
+    top: -290px;
+    margin-bottom: 2rem;
+}
+
+.blank::after,
+.blank::before {
+    inset: 0.7rem;
+}
+
+.footer img{
+    width: 2.5rem;
+}
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+    .cm-main{
+        height: 100vh;
+    }
+
+    .count{
+        gap: 1rem!important;
+        justify-content: flex-end!important;
+    }
+
+    .count-main{
+        width: 20%;
+    }
+
+    .count-hari{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .count-hari p{
+        font-size: 1.8rem;
+    }
+    
+    .count-lable{
+        font-size: 0.5rem;
+    }
+    
+    .count-final-date h1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .coming-announ p{
+        font-size: 1rem;
+    }
+    
+    .blank {
+        padding: 2rem ;
+        height: 3rem;
+        border: 0.6rem solid #221737;
+        position: relative;
+    
+    }
+    
+    .blank::after,
+    .blank::before {
+        inset: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+
+    .blank {
+        padding: 2rem ;
+        height: 3rem;
+        border: 0.6rem solid #221737;
+        position: relative;
+    
+    }
+    
+    .blank::after,
+    .blank::before {
+        inset: 1rem;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1200px) {
+    .blank {
+        padding: 2rem ;
+        height: 3rem;
+        border: 0.6rem solid #221737;
+        position: relative;
+    
+    }
+    
+    .blank::after,
+    .blank::before {
+        inset: 1rem;
+    }
 }

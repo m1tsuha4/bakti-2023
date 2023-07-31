@@ -6,4 +6,5 @@
          <img src="img/youtube.svg" class="img-fluid" alt="">
          <img src="img/tiktok.svg" class="img-fluid" alt="">
         </div>
+      </div>
   </sec>
