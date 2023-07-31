@@ -52,6 +52,7 @@ body {
     padding: 1rem 6%;
     flex-direction: column;
     position: relative;
+    min-height: 100vh;
 }
 
 

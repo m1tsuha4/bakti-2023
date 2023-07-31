@@ -25,14 +25,15 @@
         </div>
         <div class="row coming-header">
             <div class="col-md-6  ">
-                <img src="img/coming.svg" alt="" class="img-fluid">
+                <img src="img/coming.svg" alt="" class="img-fluid img-coming ">
                 <div class="row mt-4 d-flex flex-row">
-                  <div class="col-md-6"> <input type="email" class="form-control input-notify" id="exampleFormControlInput1" placeholder="name@example.com"></div> 
-                   <div class="col-md-6"><button type="button" class="btn btn-primary">Primary</button></div> 
+                  <div class="col-md-6">
+                     <input type="email" class="form-control input-notify" id="exampleFormControlInput1" placeholder="Ketikkan Emailmu disini"></div> 
+                   <div class="col-md-6 d-flex justify-content-start"><button type="button" class="btn btn-coming">Notify Me</button></div> 
                 </div>
             </div>
             <div class="col-md-6 ">
-                <div class="row flex flex-row justify-content-start  gap-5">
+                <div class="row flex flex-row justify-content-end countdown gap-5">
                         <div class="col-md-2 count-main">
                             <div class="row  count-hari"><p id="days" >00</p></div>
                             <p class="count-lable" >Hari</p>
