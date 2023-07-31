@@ -1,15 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+
+
+
 body {
     font-family: "Poppins", sans-serif;
+
 }
 
-.content {
-    width: calc(100%-265px);
+
+.container-fluid{
+    padding: 0;
+    display: flex;
+    flex-wrap:wrap ;
+
 }
+
+.content-main{
+    margin: 0;
+}
+
+/* .main-content{
+    display: flex;
+    justify-content: s;
+} */
 
 .sidebar {
-    position: fixed;
+    position:fixed;
     width: 20%;
     height: 100%;
     background-color: #6C2863;
@@ -21,15 +38,32 @@ body {
 }
 
 
-
-.header {
-    
-    color: var(--50, #FDF6FD);
-    text-align: center;
-   
+.sidebar-column{
+    padding: 0;
+    width: 20%;
 }
 
-.header h2 {
+.content-column{
+    padding: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6%;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.sidebar-header {
+
+    color: var(--50, #FDF6FD);
+    text-align: center;
+
+}
+
+.sidebar-header h2 {
     margin-top: 64px;
     font-size: 20px;
     font-style: normal;
@@ -44,16 +78,16 @@ a {
 }
 
 ul {
-    list-style-type: none;  
+    list-style-type: none;
 }
 
 .link-name {
     /* text-align: center; */
     font-size: 14px;
     font-style: normal;
-    line-height: normal; 
+    line-height: normal;
     margin-left: 20px;
-    
+
 }
 
 nav{
@@ -69,6 +103,7 @@ nav{
     border-radius: 5px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 
@@ -79,20 +114,20 @@ nav{
 
 .nav-active {
     margin-left: -20px;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
     width: 204px;
     height: 38px ;
     background-color: #FDF6FD;
     border-radius: 5px;
     display: inline-flex;
-    align-items: center;    
+    align-items: center;
 }
 
 .nav-active img {
     width: 20px;
     margin-left: 20px;
-    margin-top: 0px; 
-    
+    margin-top: 0px;
+
 }
 
 .active {
@@ -109,7 +144,7 @@ nav{
     margin-left: -20px;
     margin-top: 80px;
     margin-bottom: 156px;
-}
+}e
 
 .nav-logout img {
     width: 20px;
@@ -118,132 +153,141 @@ nav{
 
 
 .line {
-    position: relative;
-    left: -80px;
-    top: 0px;
+    position: absolute;
+    left: -22px;
+    top: 0.5px;
     /* border-radius: 5px; */
-    
-    
+
+
 }
 
 .none {
     display: none;
 }
 
-.content { 
-    width: auto;
-    height: auto;
-}
+/* header css */
 
 
 .header-wrapper {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-  }
-  
 
-  .profile-info {
+}
+
+
+.profile-info {
     display: flex;
     align-items: center;
     margin-left: 3em; /* Atur jarak antara gambar profil dan teks */
-  }
-  
-  .name-header {
+}
+.profile-header {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.name-header {
     margin-left: 5px; /* Atur jarak antara gambar profil dan teks */
-    
-  }
+}
 
+/* dashboard content css */
+.welcome-content {
+    /* margin-left: 18%; */
 
-  .welcome-content {
-    margin-left: 20%;
-    
-  }
+}
 
-  .profile-welcome{
-    width: 4.5rem;
-    margin-left: 6rem;
-  }
+.profile-welcome{
+    width: 5.5rem;
+ height: 5.5remrem;
+    border-radius: 50%;
+    /* margin-left: 4rem; */
+}
 
-  .text-content{
+.text-content{
     display: flex;
     gap: 1rem;
-  }
+}
 
-  .countdown-content{
-    margin-left: 6rem;
-  }
+.countdown-content{
 
-  .countdown-content h4{
-    color: #6C2863; 
+    z-index: 1;
+}
+
+.countdown-content h4{
+    color: #6C2863;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-  }
+    z-index: 1;
+}
 
-  .countdown-box{
+.countdown-box{
     border: none;
     display: flex;
     justify-content: center;
     border-radius: 0.9375rem;
     background: var(--50, #FDF6FD);
     box-shadow: 0px 2.5496182441711426px 2.5496182441711426px 0px rgba(0, 0, 0, 0.25);
-    
-  }
 
-  .card-body h6 {
-   
+}
+
+.card-body h6 {
+
     color: #6C2863;
     font-size: 0.63738rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin-bottom: 0;
-  }
-  
-  
+}
 
-  .card-body{
+
+.card-body{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-   
-  }
 
-  .countdown-fill{
+}
+
+.countdown-fill{
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     border-radius: 0.79675rem;
     background: var(--30, #6C2863);
-    
-  }
-  
- .countdown-fill p {
+
+}
+
+.countdown-fill p {
     color: var(--100, #FBEBFC);
     font-size: 2.54963rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-   margin: 0;
+    margin: 0;
     justify-content: center;
     align-items: center;
- }
+}
 
- .tugas-content {
-    margin-left: 6rem;
-   
- }
+.tugas-header{
+  position: relative;
+}
 
- .tugas-content h4 {
-    color: #6C2863; 
+.tugas-header a {
+    position: absolute;
+    left: 25rem;
+    top: 8px;
+}
+
+
+.tugas-content h4 {
+    color: #6C2863;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
- }
- 
+}
+
 .tugas-box {
     border: none;
     /* display: flex;
@@ -292,11 +336,13 @@ nav{
     align-items:left;
 }
 
+.tugas-content a{
+    display: flex;
+    align-items: center;
+}
+
 .lihat-tugas {
     color: #6C2863;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
@@ -338,7 +384,7 @@ nav{
 .upload-teks {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .btn-upload {
@@ -377,16 +423,23 @@ nav{
     color: #6C2863;
 }
 
+.kalender-main,
+.kegiatan-main{
+    margin-top: 0.5rem;
+    margin-left: 5.5rem;
+}
+
 .kalender-content h4{
-    color: #6C2863; 
+    color: #6C2863;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
+
 .kegiatan-content h4 {
-    color: #6C2863; 
+    color: #6C2863;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
@@ -396,7 +449,7 @@ nav{
 .card-kegiatan{
     display: flex;
     gap: 1.5rem;
-    
+
 }
 
 .kegiatan-box {
@@ -408,33 +461,61 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0;
+}
+
+.date-kegiatan {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.ket-kegiatan{
+    display: flex;
+    flex-direction: column;
+    color: #6C2863;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.kegiatan-header{
+    display: flex;
+    flex-direction: column;
+    color: #6C2863;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    justify-content: center;
 }
 
 
 
 
 
-
-
-/* Profile css */
-  .welcome-header h2 {
+.welcome-header h2 {
     color: #6C2863;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-bottom: 0;
-  }
+}
 
-  .welcome-header p {
+.welcome-header p {
     color: #6C2863;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-  }
+}
 
-  .btn-first{
+.btn-first{
     border-radius: 0.6rem;
     background: #6C2863;
     color: var(--50, #FDF6FD);
@@ -442,18 +523,247 @@ nav{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-  }
+    padding: 8px 6px;
+}
 
-  .btn-first:hover{
+.btn-first:hover{
     background-color: rgba(108, 40, 99, 1);
     color: #fff;
-  }
+}
 
-  .download-content img {
-    width: 1.2rem;
-  }
+.download-content img {
+    width: 1.4rem;
+}
+
+/* penugasan css */
+
+.penugasan-header,
+.penugasan-header-status{
+    color: #6C2863;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* margin-right: 1.8rem; */
+    margin-left: 2rem
+}
 
 
+
+
+.penugasan-box{
+    width: 55rem;
+    height:5rem;
+    margin-left: 3.5rem;
+    border-radius: 0.9375rem;
+    background: var(--50, #FDF6FD);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.penugasan-box-late{
+    width: 55rem;
+    height:5rem;
+    margin-left: 3.5rem;
+    border-radius: 0.9375rem;
+    background: #B73639;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.penugasan-box-done{
+    width: 55rem;
+    height:5rem;
+    margin-left: 3.5rem;
+    border-radius: 0.9375rem;
+    background: #E5E5E5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.penugasan-box.active{
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.penugasan-box::after,
+.penugasan-box-late::after,
+.penugasan-box-done::after{
+    content: "";
+    width: 1.5rem;
+    height: 1rem;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 1.2rem;
+    transition: transform 0.3s ease-out;
+
+}
+
+
+.penugasan-box::after,
+.penugasan-box-done::after{
+    background-image: url(../img/down.svg);
+}
+
+.penugasan-box-late::after{
+    background-image: url(../img/down-red.svg);
+}
+
+.penugasan-box.active::after,
+.penugasan-box-done.active::after,
+.penugasan-box-late.active::after{
+    transform: rotate(180deg);
+}
+
+.penugasan-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.penugasan-body-content {
+    padding:  1rem  ;
+    text-align: center;
+    text-justify: inter-word;
+    line-height: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgba(253, 246, 253, 0.5);
+    border-radius: 0.9375rem;
+    margin-left: 3.2rem;
+    border-top: 1px solid #FDF6FD;
+}
+
+.box-header{
+    text-align: center;
+    color: #6C2863;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-header-late{
+    text-align: center;
+    color: #5A0909;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-header-done{
+    text-align: center;
+    color: #B0B0B0;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-box,
+.status-box{
+    color: #6C2863;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-box-late,
+.status-box-late{
+    color: #5A0909;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-box-done,
+.status-box-done{
+    color: #B0B0B0;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* panduan css */
+
+
+
+.panduan-main{
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1.25rem;
+    background: var(--50, #FDF6FD);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panduan-header{
+    color: #6C2863;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* ukm css */
+
+.ukm-kolom{
+    display: flex;
+    justify-content: center;
+}
+.ukm-main{
+    border-radius: 0.9375rem;
+    background: var(--50, #FDF6FD);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ukm-header{
+
+    color: #6C2863;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* Profile css */
 .main-welcome {
     width: 815px;
     height: 48px;
@@ -462,7 +772,7 @@ nav{
     left: 365px;
     padding: 10px;
     border-radius: 10px;
-    background: #FBEBFC;    
+    background: #FBEBFC;
     display: flex;
     align-items: center;
     flex-shrink: 0;
@@ -476,21 +786,29 @@ nav{
     line-height: normal;
     margin-top: 9px;
     margin-left: 36px;
-    margin-right: 16px; 
+    margin-right: 16px;
 }
 
-.add-profile {
-    width: 72px;
-    position:absolute;
-    left: 360px;
-    top: 165px;
-    cursor: pointer;
+/* .row{
+    margin: 0;
+} */
+
+.update-profile{
+    padding: 0;
 }
+.add-profile {
+    width: 90px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.form-control{
+    width: 90%!important;
+}
+
 
 .tag-nama {
-    position: absolute;
-    top: 175px;
-    left: 470px;
+
     color: #6C2863;
     font-size: 20px;
     font-style: normal;
@@ -499,9 +817,6 @@ nav{
 }
 
 .tag-nim {
-    position: absolute;
-    top: 200px;
-    left: 470px;
     color: #6C2863;
     font-size: 16px;
     font-style: normal;
@@ -509,12 +824,114 @@ nav{
     line-height: normal;
 }
 
-.fullname {
+.form-profile label{
+    color: #6C2863;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form-profile input{
+    border-radius: 0.3125rem;
+    border: 2px solid #E5E5E5;
+    background: #F9FBFB;
+    color: #6C2863;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+}
+
+
+.button-profile .btn-first{
+    padding: 8px 24px;
+}
+
+.input-fakultas,
+.input-departemen,
+.input-sandi{
+    position: relative;
+}
+
+.edit-fakultas,
+.edit-departemen,
+.edit-sandi{
+    position: absolute;
+    top: calc(54%);
+    right: calc(15%);
+
+}
+
+.input-sandi-baru{
+    position: relative;
+}
+.edit-sandi-baru{
+    position: absolute;
+    top: calc(54%);
+}
+
+.note{
+    color: red ;
+    color: #B73639;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pilihan1,
+.pilihan2{
+    padding: 0;
+}
+
+
+
+.btn-check+.btn:hover{
+
+    border: 2px solid #E5E5E5;
+    border: none;
+    background: #F9FBFB;
+    border: 2px solid #E5E5E5;
+    color: #D9D9D9;
+
+}
+
+.pilihan2 label.btn {
+    padding: 6px 40px;
+}
+
+.btn-check+.btn{
+    background: #F9FBFB;
+    border: 2px solid #E5E5E5;
+    color: #D9D9D9;
+    font-weight: 400;
+    padding: 6px 32px;
+}
+
+.btn-check:checked + .btn-outline-primary {
+    background: #F9FBFB;
+    color: #6C2863;
+    border: 2px solid #E5E5E5;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+/* .fullname {
     position: absolute;
     top: 250px;
     left: 365px;
     color: #6C2863;
-    
+
 }
 
 
@@ -560,7 +977,7 @@ nav{
     position: absolute;
     top: 250px;
     left: 810px;
-    color: #6C2863; 
+    color: #6C2863;
 }
 
 .nim {
@@ -591,23 +1008,23 @@ nav{
     line-height: normal;
     padding: 0px 12px 0 36px ;
     outline: none;
-}
+} */
 
-.fakultas{
+/* .fakultas{
     position: absolute;
     top: 350px;
     left: 365px;
     color: #6C2863;
-}
+} */
 
-.edit-fakultas {
+/* .edit-fakultas {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
+} */
 
-.input-fakultas {
+/* .input-fakultas {
     width: 370px;
     height: 36px;
     color: #6C2863;
@@ -620,12 +1037,12 @@ nav{
     line-height: normal;
     padding: 0px 60px 0 36px ;
     outline: none;
-}
+} */
 
-.edit{
+/* .edit{
     position: relative;
     left: -65px;
-}
+} */
 
 
 .custom-datepicker {
@@ -648,21 +1065,27 @@ nav{
 .custom-datepicker .custom-icon {
     position: absolute;
     top: 73%;
-    right: 40px;
+    right: 80px;
     transform: translateY(-50%);
     width: 20px;
-    height: 20px;
-    /* Ganti dengan gambar ikon kalender yang Anda inginkan */
+    height: 24px;
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
 }
 
+.sandi-header {
+    color: #6C2863;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 
-
-.departemen{
+/* .departemen{
     position: absolute;
     top: 350px;
     left: 810px;
@@ -686,20 +1109,20 @@ nav{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+   line-height: normal;
     padding: 0px 60px 0 36px ;
     outline: none;
-}
+}  */
 
-.jenis-kelamin {
+/* .jenis-kelamin {
     position: absolute;
     top: 465px;
     left: 365px;
     color: #6C2863;
     display: flex;
 
-}
-
+} */
+/*
 .edit-kelamin {
     position: absolute;
     left: 0px;
@@ -731,7 +1154,7 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+
 }
 .option-l {
     width: 175px;
@@ -751,16 +1174,16 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+
 }
 
 .option-p.selected,
 .option-l.selected {
    /* Warna latar belakang yang berbeda untuk kotak yang dipilih */
-  color:#6C2863; /* Warna teks yang berbeda untuk kotak yang dipilih */
-}
+/* color:#6C2863; /* Warna teks yang berbeda untuk kotak yang dipilih */
+/* }  */
 
-.tanggal-lahir {
+/* .tanggal-lahir {
     position: absolute;
     top: 435px;
     left: 810px;
@@ -790,13 +1213,13 @@ nav{
 }
 
 .sandi-main {
-    
+
 position: absolute;
 left: 365px;
 top: 540px;
 }
 
-.sandi-header {
+ .sandi-header {
     color: #6C2863;
 
     font-size: 20px;
@@ -810,7 +1233,7 @@ top: 540px;
     top: 60px;
     left: 0px;
     color: #6C2863;
-   
+
 }
 
 .edit-sandi1 {
@@ -862,10 +1285,10 @@ top: 540px;
     line-height: normal;
     padding: 0px 60px 0 36px ;
     outline: none;
-    /* margin-bottom: 20px; */
-}
 
-.simpan{
+} */
+
+/* .simpan{
 
 position: absolute;
 left: 355px;
@@ -883,7 +1306,7 @@ top: 165px;
     font-weight: 600;
     padding: 8px 24px 8px 24px;
     margin-bottom: 36px;
-}
+}  */
 
 .overlay {
     position: fixed;
@@ -894,8 +1317,8 @@ top: 165px;
     /* background-color: rgba(0, 0, 0, 0.8);  */
     backdrop-filter: blur(5px); /* Efek blur */
     z-index: 9998; /* Lebih rendah dari pop-up agar pop-up tetap di atas */
-  }
-  
+}
+
 
 .update-box {
     width: 25rem;
@@ -944,10 +1367,10 @@ strong {
 
 .drag-option {
     width: 300px;
-height: 160px;
-border-radius: 10px;
-border: 2px dashed var(--30, #6C2863);
-margin-left: 50px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px dashed var(--30, #6C2863);
+    margin-left: 50px;
 }
 
 .drag-option img{
@@ -981,16 +1404,16 @@ margin-left: 50px;
     align-items: center;
     width: 300px;
     height:  50px;
-  }
+}
 
-  .drag-option.uploaded button{
+.drag-option.uploaded button{
     margin-top: 100px;
-    
-  }
 
-  .drag-option.uploaded p {
+}
+
+.drag-option.uploaded p {
     font-size: 16px;
-  }
+}
 
 
 #closeIcon {
@@ -1000,24 +1423,167 @@ margin-left: 50px;
     cursor: pointer;
     width: 18px; /* Sesuaikan ukuran gambar */
     height: 18px; /* Sesuaikan ukuran gambar */
-  }
+}
 
 
-  .show-password-icon,
-  .hide-password-icon {
+.show-password-icon,
+.hide-password-icon {
     position: absolute;
     top: 73%;
     right: 40px;
     transform: translateY(-50%);
     cursor: pointer;
-  }
+}
 
-  .hide-password-icon {
+.hide-password-icon {
     display: none;
-  }
+}
 
-  
+/* admin css */
+/* absen */
 
+.absen-main{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.9375rem;
+    background: var(--50, #FDF6FD);
+    box-shadow: 0px 4px 25px 0px rgba(29, 60, 88, 0.10);
+}
+
+
+.kolom-absen-header,
+.kolom-absen,
+.absen-detail{
+    color: #6C2863;
+    font-size: 0.75rem;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    text-align: center;
+}
+
+.kolom-absen-header,.absen-detail {
+    font-weight: 700;
+}
+
+.kolom-absen{
+    font-weight: 400;
+}
+
+
+
+
+.logout-alert{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-logout button{
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+.confirmation-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.4625rem;
+    background: #6C2863;
+    box-shadow: 0px 4.441411972045898px 4.441411972045898px 0px rgba(0, 0, 0, 0.25);
+    width: 30rem;
+    height: 12rem;
+    z-index: 9999;
+}
+
+.dialog-content {
+
+
+}
+
+.dialog-content p {
+    padding: 30px 10px 20px 10px;
+    color: var(--50, #FDF6FD);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dialog-buttons {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+
+.btn-confirm,
+.btn-cancel {
+    padding: 8px 24px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.btn-confirm {
+    background-color: #fff;
+    color: #6C2863;
+}
+
+.btn-cancel {
+    background-color: #fff;
+    color: #F72C25;
+}
+
+
+.line-logout{
+    width: 30rem;
+    height: 0.14625rem;
+    background: #FDF6FD;
+}
+
+.line-logout2{
+    height: 5.9rem;
+    background: #FDF6FD;
+}
+/* Your existing styles for sidebar */
+
+/* css sertifikat */
+
+.sertifikat-main{
+    border-radius: 0.9375rem;
+    background: #B73639;
+    width: 18.75rem;
+    padding: 2.5rem;
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+/* .sertifikat-main img {
+    width: 0.5rem;
+    height: auto;
+} */
+.sertifikat-main p{
+    color: var(--50, #FDF6FD);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 
 
