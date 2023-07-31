@@ -449,8 +449,8 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-   width: 5rem;
-   height: 5rem;
+   width: 4.5rem;
+   height: 4.5rem;
    align-items: center;
    
 }
@@ -477,11 +477,12 @@ a {
 
 .count-final-date{
     color: var(--10, #DBB072);
+    margin-bottom: 1.4rem;
 }
 
 .count-final-date h1{
     font-family: Poppins;
-    font-size: 1.5625rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -491,7 +492,7 @@ a {
 .coming-announ p {
     color: var(--30, #6C2863);
     font-family: Poppins;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -499,6 +500,7 @@ a {
 }
 
 .blank{
+    margin-top: 2rem;
     width: 100%;
     height: 10rem;
     border: 1rem solid #221737;
@@ -509,13 +511,13 @@ a {
 
 .blank::after {
     content: "";
-    background: linear-gradient(135deg, #00fd37, #bbff00);
+    background: linear-gradient(135deg, #6C2863, #6C2863);
     width: 0%;
     height: 6rem;
     padding: 1rem;
     border-radius: 0px;
     position: absolute;
-    animation: progress 2s linear forwards;
+    animation: progress 2s linear infinite;
   }
 
   @keyframes progress{
@@ -529,7 +531,40 @@ a {
     border-radius: 0.625rem;
     border: 1px solid #B48FAF;
     background: var(--50, #FDF6FD);
+    padding: 6px 16px;
+}
+
+.coming-header input[type="email"]::placeholder{
+    color: rgba(180, 143, 175, 0.50);
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn-coming{
+    border-radius: 0.625rem;
+    background: var(--10, #DBB072);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 3px 30px;
+}
+
+.btn-coming:hover{
+    background-color: var(--10, #DBB072);
+    color: #fff;
 }
  
+.img-coming{
+    margin-bottom: 3rem;
+}
+
+
 
   
