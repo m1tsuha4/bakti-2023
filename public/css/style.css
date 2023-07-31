@@ -20,11 +20,7 @@ body {
     height: 34rem;
     background: var(--100, #fbebfc);
     border-radius: 1.5625rem;
-<<<<<<< HEAD
     position: fixed;
-=======
-    position: absolute;
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -221,11 +217,7 @@ nav {
     height: 30rem;
     background: var(--100, #fbebfc);
     border-radius: 1.5625rem;
-<<<<<<< HEAD
     position: fixed;
-=======
-    position: absolute;
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -250,11 +242,7 @@ nav {
     background-color: #6c2863;
     color: #fff;
     font-weight: 600;
-<<<<<<< HEAD
     padding: 1.2rem 10rem;
-=======
-    padding: 1.2rem 9.5rem;
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e
     margin-top: 1em;
 }
 
@@ -267,21 +255,17 @@ nav {
 .forget-password{
     color: #6c2863;
     font-weight: 400;
-<<<<<<< HEAD
     font-size: 0.8rem;
 }
 
 .forget-password{
     margin-top: -2rem;
-=======
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e
 }
 
 .checkbox{
     display: flex;
 }
 
-<<<<<<< HEAD
 .main-dashboard{
     display: flex;
     justify-content: space-between;
@@ -292,13 +276,6 @@ nav {
 
 #hero{
     height: 100vh;
-=======
-.hero-main{
-    display: flex;
-    justify-content: space-between;
-    padding: 1.7rem 5%;
-
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e
 }
 
 #hero img {
@@ -450,7 +427,6 @@ a {
     background: var(--50, #FDF6FD);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-<<<<<<< HEAD
 
 /* cooming soon */
 
@@ -557,5 +533,3 @@ a {
  
 
   
-=======
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e

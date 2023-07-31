@@ -44,17 +44,9 @@
             </div>
             <div class="row mt-4">
                 <div class="col tugas-content">
-<<<<<<< HEAD
                     <div class="row tugas-header">
                             <h4><img class="img-fluid me-3" src="img/task.svg" alt="">Tugas</h4>
                            <a href="/penugasan"> <p class="lihat-tugas" >Lihat</p></a <!-- mengarah ke penugasan -->
-=======
-                    <div class="row">
-                        <div class="col d-flex justify-content-between">
-                            <h4><img class="img-fluid me-3" src="img/task.svg" alt="">Tugas</h4>
-                            <p class="lihat-tugas" >Lihat</p> <!-- mengarah ke penugasan -->
-                        </div>
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e
                     </div>
 
                     <div class="card mb-4 tugas-box" style="width: 28rem; height:6rem">

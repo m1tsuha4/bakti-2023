@@ -1,9 +1,6 @@
 <section>
     <header>
-<<<<<<< HEAD
         
-=======
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e
         <nav class="navbar navbar-expand-lg nav-color py-4 w-100 position-fixed">
             <div class="container">
                 <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

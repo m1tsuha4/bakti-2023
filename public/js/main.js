@@ -395,7 +395,4 @@ function submitRegisterForm() {
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e

@@ -22,10 +22,7 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
             
-=======
->>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e
             <div class="col-12 penugasan-body">
                 <div class="penugasan-body-content">
                     Tugas ditulis di double folio dengan format bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla
