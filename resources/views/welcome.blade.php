@@ -5,6 +5,7 @@
 
 
 
+    
     <div class="nav-logo">
         <img src="/img/logo-unand.png" alt="Bootstrap" width="42" height="42">
         <img src="/img/logo-bakti.png" alt="Bootstrap" width="42" height="42">
@@ -12,18 +13,17 @@
     </div>
 
     <!-- ========== Start Login ========== -->
-
     <section id="hero">
         <div class="container hero-main">
             <div class="row hero">
                 <div class="col-4">
-                    <div class="bakti">
+                    <div data-aos="zoom-in" data-aos-duration="1000" class="bakti">
                         <img src="img/bakti2023.svg" class="img-fluid" alt="Bakti2023" >
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button class="btn btn-style btn-first mt-5 fw-600" type="button" onclick="showLoginBox()" >
                             Masuk
-                            <form method="POST" action="{{ route('login') }}" id="loginBox" class="login-box" style="display: none">
+                            <form method="POST" action="{{ route('login') }}" id="loginBox" class="login-box" style="display: none" >
                                 @csrf
                                 <div class="row justify-content-center mb-4">
                                     <h2>Masuk Akun</h2>
@@ -38,14 +38,20 @@
                                         <div class="row justify-content-center"><input type="password" id="sandiMasuk" name="password" class="form-control password" placeholder="Password" aria-label="First name">
                                             <span class="show-password-icon1"><img id="eyeicon5" class="icon-password" src="img/eye-slash.svg" alt=""></span>
                                         </div>
-
                                     </div>
-                                    <div class="row button-forgot">
+                                    <div class="col button-forgot">
                                         <div class="row justify-content-center">
                                             @if (Route::has('password.request'))
-                                                <a href="{{ route('password.request') }}"> <div class="row justify-content-end forget-password">Forgot Password</div></a>
+                                            <div class="col-md-7">
+                                                <a href="{{ route('password.request') }}"> 
+                                                    <div class="row mb-4 justify-content-end forget-password"> 
+                                                        
+                                                             Forgot Password
+                                                    </div>
+                                                    </div>
+                                                </a>
                                             @endif
-                                            <div class="btn btn-nav btn-third button-login" onclick="submitLoginForm()">Masuk</div>
+                                            <div class=" btn btn-nav btn-third button-login" onclick="submitLoginForm()">Masuk</div>
                                         </div>
 
                                     </div>
@@ -57,7 +63,7 @@
                     </div>
                 </div>
                 <div class="col-8  d-flex justify-content-end">
-                    <div class="col-8">
+                    <div data-aos="zoom-in" data-aos-duration="1000" class="col-8">
                         <img src="img/komputer.svg" class="img-fluid" alt="Bakti2023" >
                     </div>
                 </div>
@@ -70,12 +76,12 @@
     <section id="intro">
         <div class="container text-center intro-main">
             <div class="row intro-row1 ">
-                <div class="col-md-4 me-5 mt-5 intro-img">
+                <div data-aos="fade-up                                              " data-aos-duration="1000" class="col-md-4 me-5 mt-5 intro-img">
                     <img src="img/intro.svg" alt="">
                 </div>
                 <div class="col-md-6 intro-text">
                     <div class="row">
-                        <p class="" > <strong>BAKTI</strong>(Bimbingan Aktivitas Kemahasiswaan dalam Tradisi Ilmiah) adalah kegiatan <strong>pengenalan</strong> terhadap<strong>, tradisi ilmiah dan pembinaan kegiatan kemahasiswaan</strong> di perguruan tinggi bagi <strong> mahasiswa baru Universitas Andalas</strong> </p>
+                        <p data-aos="fade-up" data-aos-duration="1000" class="" > <strong>BAKTI</strong>(Bimbingan Aktivitas Kemahasiswaan dalam Tradisi Ilmiah) adalah kegiatan <strong>pengenalan</strong> terhadap<strong>, tradisi ilmiah dan pembinaan kegiatan kemahasiswaan</strong> di perguruan tinggi bagi <strong> mahasiswa baru Universitas Andalas</strong> </p>
                     </div>
 
                 </div>
@@ -190,4 +196,6 @@
         </div>
     </section>
 
+
+    
 @endsection

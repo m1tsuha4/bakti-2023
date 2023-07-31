@@ -15,17 +15,20 @@
 <body>
 
 <div class="container-fluid">
-
-
-
-
+    
     <div class="col-3 sidebar-column">
-        @include('partials.sidebar')
+       
+            @include('partials.sidebar')
+      
+        
     </div>
     <div class="col-9 content-column">
-        @include('partials.header')
-        {{-- @include('partials.header') --}}
-        @yield('content')
+        
+            @include('partials.header')
+            {{-- @include('partials.header') --}}
+            @yield('content')
+       
+       
     </div>
 
     <div id="confirmation-dialog" class="row confirmation-dialog">

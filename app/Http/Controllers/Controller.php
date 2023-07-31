@@ -53,4 +53,6 @@ class Controller extends BaseController
         $user = Auth::user();
         return view('user.sertifikat', compact('currentPage','user'));
     }
+
+    
 }

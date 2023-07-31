@@ -1,6 +1,5 @@
-<nav>
-    <div class="sidebar">
-        <div class="row sidebar-main ">
+
+        <div class="row sidebar sidebar-main ">
             <div class="col sidebar-col ">
                 <div class="sidebar-header">
                     <h2>Profile</h2>
@@ -10,6 +9,7 @@
                         <li class="nav-link {{ $currentPage === 'dashboard' ? 'nav-active' : '' }}">
                             <a class=" {{ $currentPage === 'dashboard' ? 'active' : '' }} " href="/dashboard">
                                 <img src="{{ $currentPage === 'dashboard' ? 'img/dashboard-av.svg' : 'img/dashboard.svg' }}" alt="">
+                                
                                 <svg class=" {{ $currentPage === 'dashboard' ? 'line' : 'none' }} " xmlns="http://www.w3.org/2000/svg" width="10" height="36" viewBox="0 0 8 44" fill="none">
                                     <path d="M4 40L4 4" stroke="#F9FBFB" stroke-width="8" stroke-linecap="round"/>
                                 </svg>
@@ -74,5 +74,4 @@
             </div>
         </div>
 
-    </div>
-</nav>
+

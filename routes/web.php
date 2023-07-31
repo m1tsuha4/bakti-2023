@@ -20,6 +20,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome',[ "tittle" => 'Beranda']);
 });
+
+Route::get('/comingsoon', function () {
+    return view('comingsoon',[ "tittle" => 'ComingSoon']);
+});
+
+
 //Route Member
 Route::middleware(['auth','checkRole:member'])->group(function (){
     Route::get('/dashboard', [MemberController::class, 'showDashboard']);
