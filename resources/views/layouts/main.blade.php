@@ -15,6 +15,7 @@
 <body>
 
 <div class="container-fluid">
+<<<<<<< HEAD
     
     <div class="col-3 sidebar-column">
        
@@ -29,6 +30,19 @@
             @yield('content')
        
        
+=======
+
+
+
+
+    <div class="col-3 sidebar-column">
+        @include('partials.sidebar')
+    </div>
+    <div class="col-9 content-column">
+        @include('partials.header')
+        {{-- @include('partials.header') --}}
+        @yield('content')
+>>>>>>> a7ef656493eef8f4b3641dc5cd2f94eb0a2a6e0e
     </div>
 
     <div id="confirmation-dialog" class="row confirmation-dialog">
