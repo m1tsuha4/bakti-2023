@@ -391,8 +391,28 @@ function submitRegisterForm() {
 }
 
 
+function handleFileChange() {
+    var fileInput = document.getElementById('foto');
+    var customFileLabel = document.querySelector('.custom-file-input-wrapper');
+    var dragTextElements = document.querySelectorAll('.drag-option p');
 
+    if (fileInput.files.length > 0) {
+      // Jika ada file yang dipilih, sembunyikan teks dan label
+      customFileLabel.style.display = 'none';
+      for (var i = 0; i < dragTextElements.length; i++) {
+        dragTextElements[i].style.display = 'none';
+      }
+    } else {
+      // Jika tidak ada file yang dipilih, tampilkan teks dan label kembali
+      customFileLabel.style.display = 'block';
+      for (var i = 0; i < dragTextElements.length; i++) {
+        dragTextElements[i].style.display = 'block';
+      }
+    }
+  }
 
+  // Tambahkan event listener untuk file input
+  document.getElementById('foto').addEventListener('change', handleFileChange);
 
 
 

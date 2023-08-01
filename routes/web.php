@@ -25,6 +25,8 @@ Route::get('/comingsoon', function () {
     return view('comingsoon',[ "tittle" => 'ComingSoon']);
 });
 
+Route::get('/dashboard-admin', [Controller::class, 'showDashboardAdmin']);
+
 
 //Route Member
 Route::middleware(['auth','checkRole:member'])->group(function (){

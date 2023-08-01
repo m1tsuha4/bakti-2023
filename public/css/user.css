@@ -47,12 +47,10 @@ body {
     padding: 0;
     width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 6%;
+    padding: 1rem 2%;
     flex-direction: column;
-    position: relative;
-    min-height: 100vh;
+    /* position: relative; */
+    /* min-height: 100vh; */
 }
 
 
@@ -1321,14 +1319,16 @@ top: 165px;
 }
 
 
+
 .update-box {
     width: 25rem;
     height: 25rem;
     background: var(--100, #fbebfc);
     border-radius: 1.5625rem;
     position: absolute;
-    left: 432px;
-    top: 108px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     opacity: 0;
@@ -1345,6 +1345,25 @@ top: 165px;
     line-height: normal;
     margin-bottom: 20px;
 }
+
+#foto::file-selector-button {
+    display: none;
+}
+
+.custom-file-input-wrapper{
+    color: #6C2863;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+input[type="file"] {
+    color: #6C2863;/* Membuat teksnya transparan */
+    font-size: 1rem;
+    display: flex;
+}
+
 
 strong {
     cursor: pointer;
@@ -1368,10 +1387,18 @@ strong {
 
 .drag-option {
     width: 300px;
-    height: 160px;
+    height: 180px;
     border-radius: 10px;
     border: 2px dashed var(--30, #6C2863);
     margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.drag-option label{
+    display: flex;
 }
 
 .drag-option img{
@@ -1586,6 +1613,11 @@ strong {
     line-height: normal;
 }
 
+
+.container-header{
+    display: flex;
+    justify-content: end;
+}
 
 
 

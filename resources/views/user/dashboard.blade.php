@@ -1,8 +1,9 @@
 @extends('layouts.main')
 @section('content')
     <div class="row dashboard-main">
+        
         <div class="col-6 kolom1">
-            <div class="row ">
+            <div class="row">
                 <div class="col mt-3 text-content ">
                     <img class="img-fluid profile-welcome" src="{{ $user->profile ? asset('storage/profiles/' . $user->profile->foto) : 'img/add-profile.svg' }}" alt="">
                     <div class="col mt-3 welcome-header">
