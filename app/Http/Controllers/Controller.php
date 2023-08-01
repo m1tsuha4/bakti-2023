@@ -54,5 +54,11 @@ class Controller extends BaseController
         return view('user.sertifikat', compact('currentPage','user'));
     }
 
-    
+
+    public function showDashboardAdmin()
+    {
+        $currentPage = 'dashboard-admin';
+        
+        return view('admin.dashboard-admin', compact('currentPage'));
+    }
 }

@@ -1,44 +1,10 @@
 @extends('layouts.main')
 @section('content')
-    <div class="row ms-5 mt-5">
+    <div class="row ms-5 mt-5 profile">
         <div class="col">
             <div class="row ms-5 ">
                 <div class="col-1 update-profile ">
                     <img class="img-fluid add-profile" src="{{ $user->profile ? asset('storage/profiles/' . $user->profile->foto) : 'img/add-profile.svg' }}" alt="" onclick="showUpdateBox()">
-{{--                    <form action="">--}}
-{{--                        <div id="updateBox" class="update-box" style="display: none;">--}}
-{{--                            <h2>Upload Photo</h2>--}}
-{{--                            <div class="drag-option" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">--}}
-{{--                                <img class="icon-add" src="img/add-photo.svg" alt="">--}}
-{{--                                <p>Drag and drop here</p>--}}
-{{--                                <p>or</p>--}}
-{{--                                <p onclick="handleBrowse()"><strong>Browse</strong></p>--}}
-{{--                            </div>--}}
-{{--                            <button>Simpan</button>--}}
-{{--                            <img id="closeIcon" src="img/tutup.svg" alt="" onclick="closeUpdateBox()">--}}
-{{--                        </div>--}}
-{{--                        <div id="overlay"></div>--}}
-{{--                    </form>--}}
-{{--                    <form method="POST" action="{{ route('profile.update') }}" enctype="multipart/form-data">--}}
-{{--                        @csrf--}}
-{{--                        @method('PATCH')--}}
-
-{{--                        <!-- Your other form fields -->--}}
-
-{{--                        <div id="updateBox" class="update-box" style="display: none;">--}}
-{{--                            <h2>Upload Photo</h2>--}}
-{{--                            <div class="drag-option" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">--}}
-{{--                                <img class="icon-add" src="img/add-photo.svg" alt="">--}}
-{{--                                <p>Drag and drop here</p>--}}
-{{--                                <p>or</p>--}}
-{{--                                <p onclick="handleBrowse()"><strong>Browse</strong></p>--}}
-{{--                            </div>--}}
-{{--                            <input type="file" name="foto" id="foto" style="display: none;"> <!-- File input for foto -->--}}
-{{--                            <button type="submit">Simpan</button>--}}
-{{--                            <img id="closeIcon" src="img/tutup.svg" alt="" onclick="closeUpdateBox()">--}}
-{{--                        </div>--}}
-{{--                        <div id="overlay"></div>--}}
-{{--                    </form>--}}
                     <form id="formUpdateFoto" method="POST" action="{{ route('profile.update-foto', ['user_id' => Auth::user()->id]) }}" enctype="multipart/form-data">
                         @csrf
                         @method('PATCH')
@@ -46,11 +12,15 @@
                             <h2>Upload Photo</h2>
                             <div class="drag-option" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
                                 <img class="icon-add" src="img/add-photo.svg" alt="">
-                                <p>Drag and drop here</p>
-                                <p>or</p>
-                                <p onclick="handleBrowse()"><strong>Browse</strong></p>
+                                {{-- <p>Drag and drop here</p>
+                                <p>or</p> --}}
+                                {{-- <p onclick="handleBrowse()"><strong>Browse</strong></p> --}}
+                                <label class="custom-file-input-wrapper" for="foto">
+                                    Browse
+                                </label>
+                                <input class="text-center" type="file" name="foto" id="foto" >
                             </div>
-                            <input type="file" name="foto" id="foto"> <!-- File input for foto -->
+                          <!-- File input for foto -->
                             <button type="submit">Simpan</button>
                             <img id="closeIcon" src="img/tutup.svg" alt="" onclick="closeUpdateBox()">
                         </div>
@@ -78,30 +48,6 @@
                             <input  class="form-control" type="text" name="fakultas" value="{{ $user->profile->fakultas ?? '' }}" aria-label="default input example">
                         </div>
 
-{{--                        <div class="row jenis-kelamin ">--}}
-{{--                            <div class="col-12">--}}
-{{--                                <label for="inputJenisKelamin" class="form-label">Jenis Kelamin</label>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-5 pilihan1">--}}
-{{--                                <input type="text" id="inputBox1" value="Perempuan" class="form-control inactive" onclick="toggleColor('inputBox1', 'inputBox2')" readonly>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-5 pilihan2">--}}
-{{--                                <input type="text" id="inputBox2" value="Laki-Laki" class="form-control inactive" onclick="toggleColor('inputBox2', 'inputBox1')" readonly>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="row jenis-kelamin">--}}
-{{--                            <div class="col-12">--}}
-{{--                                <label for="inputJenisKelamin" class="form-label">Jenis Kelamin</label>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-5 pilihan1">--}}
-{{--                                <input type="hidden" name="jenis_kelamin" value="Perempuan">--}}
-{{--                                <input type="text" id="inputBox1" value="Perempuan" class="form-control inactive" onclick="toggleColor('inputBox1', 'inputBox2', 'Perempuan')" readonly>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-5 pilihan2">--}}
-{{--                                <input type="hidden" name="jenis_kelamin" value="Laki-Laki">--}}
-{{--                                <input type="text" id="inputBox2" value="Laki-Laki" class="form-control inactive" onclick="toggleColor('inputBox2', 'inputBox1', 'Laki-Laki')" readonly>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
                         <div class="row jenis-kelamin">
                             <div class="col-12">
                                 <label for="inputJenisKelamin" class="form-label">Jenis Kelamin</label>
@@ -186,74 +132,7 @@
             </form>
         </div>
     </div>
-    {{-- <div class="update-profile">
-        <img src="img/add-profile.svg" alt="" class="add-profile" onclick="showUpdateBox()">
-        <div id="updateBox" class="update-box" style="display: none;">
-          <h2>Upload Photo</h2>
-          <div class="drag-option" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
-            <img class="icon-add" src="img/add-photo.svg" alt="">
-            <p>Drag and drop here</p>
-            <p>or</p>
-            <p onclick="handleBrowse()"><strong>Browse</strong></p>
-          </div>
-          <a href="/edit-profile"><button>Simpan</button></a>
-          <img id="closeIcon" src="img/tutup.svg" alt="" onclick="closeUpdateBox()">
-        </div>
-      </div>
-
-           <div id="overlay"></div>
-        <h3 class="tag-nama">Aina Malyona</h3>
-        <h6 class="tag-nim">2110952048</h6>
-        <div class="input-data">
-            <div class="fullname">
-                <h5 class="nama-lengkap">Nama Lengkap<p>*</p></h5>
-                <input class="readonly-name" type="text" value="Aina Malyona" readonly>
-                <h6 class="note">* Tidak dapat diubah</h6>
-            </div>
-            <div class="NIM">
-                <h5 class="nim">NIM<p>*</p></h5>
-                <input class="readonly-nim" type="text" value="2110952048" readonly>
-                <h6 class="note">* Tidak dapat diubah</h6>
-            </div>
-            <div class="fakultas">
-                <h5 class="edit-fakultas">Fakultas</h5>
-                <input class="input-fakultas" type="text" placeholder="Fakultas">
-                <img src="img/edit.svg" alt="" class="edit">
-            </div>
-            <div class="departemen">
-                <h5 class="edit-departemen">Departemen</h5>
-                <input class="input-departemen" type="text" placeholder="Departemen">
-                <img src="img/edit.svg" alt="" class="edit">
-            </div>
-            <div class="jenis-kelamin">
-                <h5 class="edit-kelamin">Jenis Kelamin</h5>
-                <div class="option-p" onclick="selectOption('option-p')">Perempuan</div>
-                <div class="option-l" onclick="selectOption('option-l')">Laki Laki</div>
-            </div>
-        </div>
-        <div class="tanggal-lahir custom-datepicker">
-            <h5 class="edit-tgllhr">Tanggal Lahir</h5>
-            <input class="input-tgllhr" type="date" placeholder="Tanggal Lahir">
-            <span class="custom-icon"></span>
-        </div>
-            <div class="sandi-main">
-                <h2 class="sandi-header">Ganti Kata Sandi</h2>
-                <div class="sandi-lama">
-                    <h5 class="edit-sandi1">Kata Sandi Lama</h5>
-                    <input class="input-sandi1" type="password" placeholder="Sandi Lama" >
-
-                </div>
-                <div class="sandi-baru">
-                    <h5 class="edit-sandi2">Kata Sandi Baru</h5>
-                    <input class="input-sandi2" type="password" placeholder="Sandi Baru">
-                </div>
-                <div class="simpan">
-                    <button class="simpan-profile" type="button">Simpan</button>
-                </div>
-            </div>
-
-         --}}
-
+    
 
 
 @endsection
